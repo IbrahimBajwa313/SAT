@@ -9,8 +9,10 @@ export default function Collab() {
         <div className="flex flex-col justify-between items-center p-6 md:p-10 md:px-20 bg-white rounded-[2rem] text-black gap-6 md:gap-10">
           <p className="text-sm md:text-lg">
             We are collaborating with{" "}
-            <span className="font-semibold">Shab-e-AbiTalib</span>
-             {/* and{" "}
+            <span className="font-semibold text-[#22C55E]">Shab-e-AbiTalib </span>
+             {/* and{" "}<span className="font-semibold text-[#22C55E]">
+                SGC Relief Activities
+              </span>{" "}
             <span className="font-semibold">Friends of Palestine</span>  */}
             to provide critical aid to the people of Gaza. Our primary role is to
             raise and collect funds, which are then directed to our trusted

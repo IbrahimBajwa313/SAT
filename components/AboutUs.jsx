@@ -87,7 +87,7 @@ export default function AboutUs() {
               food, medicine and money.
             </p>
             <p className="text-sm md:text-lg font-normal pt-4">
-              We with our partner Shaib Abi Talib want to make the most
+              We with our partner <span className="font-semibold text-[#22C55E]">Shab-e-AbiTalib </span> want to make the most
               difference.
             </p>
 

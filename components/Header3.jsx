@@ -9,6 +9,7 @@ export default function Header() {
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isIconClicked, setIsIconClicked] = useState(false);
   const [isDropdownOpen2, setIsDropdownOpen2] = useState(false);
@@ -31,12 +32,9 @@ export default function Header() {
   const handleToggle = () => {
     setIsToggled(!isToggled);
   };
-
-  const items1 = ["Option 1", "Option 2", "Option 3"];
-  const items2 = ["Latest", "Modern", "Contemporary"];
-  const list1 = items1.map((item, index, url) => {
-    return <ListItem key={index} itemName={item} url={url} />;
-  });
+ 
+    
+    const items2 = ["About", "SGC Main Site", "Gaza Activities"];
   const list2 = items2.map((item, index, url) => {
     return <ListItem key={index} itemName={item} url={url} />;
   });
@@ -134,7 +132,7 @@ export default function Header() {
       >
         <div className="mt-4 bg-[#222] p-4 rounded-xl">
           <p className="text-xl mb-2">Services</p>
-          {list1}
+          {/* {list1} */}
         </div>
       </div>
       <div
@@ -151,27 +149,7 @@ export default function Header() {
             onClick={handleToggle}
             className="flex items-center cursor-pointer"
           >
-            <p className="text-xl mt-2 mb-2">Services</p>
-            <svg
-              className={`ml-2 transition-transform duration-300 ${
-                isToggled ? "rotate-180" : "rotate-0"
-              }`}
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 9l6 6 6-6"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </div>
-          {isToggled && list1}
+          </div> 
         </div>
       </div>
     </header>
