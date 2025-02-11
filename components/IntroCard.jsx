@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const IntroCard = () => {
   const phoneNumber = "+923325000418";
-  const message = "AsslamoAlikum! I am contacting you through SGC Site. I want to collaborate in Gaza Relief Activities. Please send the details and the account number.";
+  const message = "AsslamoAlikum! I am contacting you through Shab e Abitalib  Site. I want to collaborate in Gaza Relief Activities. Please send the details and the account number.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
@@ -23,11 +23,11 @@ const IntroCard = () => {
         {/* Text Section */}
         <div className="max-w-lg text-center md:text-left">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            <span className="block text-5xl md:text-7xl">SGC Aid &</span>
+            <span className="block text-5xl md:text-7xl">Shab e Abitalib</span>
             Relief Activities
           </h1>
           <p className="text-white text-base md:text-lg mb-6 leading-relaxed">
-            Save Gaza relief activities aiding people in Palestine through a
+          Shab e Abitalib  relief activities aiding people in Palestine through a
             reliable source. You can help by donating or directly connecting to
             families and helping them.
           </p>

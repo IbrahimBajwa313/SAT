@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Header() {
   const phoneNumber = "+923325000418";
-  const message = "AsslamoAlikum! I am contacting you through SGC Site. I want to collaborate in Gaza Relief Activities. Please send the details and the account number.";
+  const message = "AsslamoAlikum! I am contacting you through SAT Site. I want to collaborate in Gaza Relief Activities. Please send the details and the account number.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
@@ -34,7 +34,7 @@ export default function Header() {
   };
  
     
-    const items2 = ["About", "SGC Main Site", "Gaza Activities"];
+    const items2 = ["About", "SAT Main Site", "Gaza Activities"];
   const list2 = items2.map((item, index, url) => {
     return <ListItem key={index} itemName={item} url={url} />;
   });
@@ -50,14 +50,14 @@ export default function Header() {
         <Link href={"/"}>
             <div className="flex items-center space-x-4">
               <Image
-                src="/save-gaza-logo.png"
+                src="/satLogo.jpg"
                 alt="Save Gaza Campaign Logo"
                 className="h-12 w-12"
                 height={48}
                 width={48}
               />
               <span className="text-1xl md:text-2xl font-bold hover:text-gray-500">
-              SGC Relief Activities
+              Shab e Abitalib 
               </span>
             </div>
           </Link>
@@ -79,11 +79,11 @@ export default function Header() {
               rel="noopener noreferrer"
             >
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                SGC Main Site
+                SAT Main Site
               </span>{" "}
             </Link>
 
-            <Link href="https://sgc-blogs-3.vercel.app/category/6762389a587d34c99391e320"
+            <Link href="https://SAT-blogs-3.vercel.app/category/6762389a587d34c99391e320"
             target="_blank"
             rel="noopener noreferrer">
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">

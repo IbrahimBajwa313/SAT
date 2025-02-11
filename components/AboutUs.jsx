@@ -16,7 +16,7 @@ export default function AboutUs() {
         {/* left */}
         <div className="w-full md:w-[57%] h-auto md:h-[60vh] rounded-2xl bg-[#fff] shadow-lg text-black">
           <h3 className="text-3xl md:text-5xl text-center bg-[#22C55E] p-6 rounded-t-2xl text-white">
-            Save Gaza Campaign
+            Shab e Abi Talib Foundation
           </h3>
           {/* 
           <hr className="border-2 rounded-2xl my-4 border-[#22C55E]" /> */}
@@ -24,7 +24,7 @@ export default function AboutUs() {
           <div className="flex flex-col h-auto md:h-[80%] justify-evenly p-8">
             <p className="text-sm md:text-lg font-normal pt-4">
               <span className="font-semibold text-[#22C55E]">
-                Save Gaza Campaign
+                Shab e Abi Talib Foundation
               </span>{" "}
               is a movement of hope and resilience, uniting voices for justice
               and compassion. Since our inception in November 2023, we strive to
@@ -71,7 +71,7 @@ export default function AboutUs() {
         {/* right */}
         <div className="w-full md:w-[41%] h-auto md:h-[70vh] rounded-2xl bg-[#fff] text-black shadow-lg ">
           <h3 className="text-3xl md:text-4xl text-center bg-[#22C55E] rounded-t-2xl p-4 text-white">
-            SGC Relief Activities
+            SAT Relief Activities
           </h3>
 
           {/* <hr className="border-2 rounded-2xl my-3 border-[#22C55E]" /> */}
@@ -79,7 +79,7 @@ export default function AboutUs() {
           <div className="flex flex-col h-auto md:h-[80%] justify-evenly p-8">
             <p className="text-sm md:text-lg font-normal pt-4">
               <span className="font-semibold text-[#22C55E]">
-                SGC Relief Activities
+                SAT Relief Activities
               </span>{" "}
               deals with all donations and relief efforts for the people of
               Palestine. Our goal is to help the people in need in any way
@@ -96,7 +96,7 @@ export default function AboutUs() {
                 Check out our activities in Gaza!
               </p>
 
-              <Link href="https://sgc-blogs-3.vercel.app/category/6762389a587d34c99391e320">
+              <Link href="https://SAT-blogs-3.vercel.app/category/6762389a587d34c99391e320">
                 <div
                   className="text-sm md:text-base flex flex-row gap-4 justify-center items-center px-8 py-4  bg-[#22C55E] text-white rounded-full mt-4 font-semibold hover:bg-[#D0312D] hover:text-[#fff] transition-all ease-in-out duration-200"
                   style={{
