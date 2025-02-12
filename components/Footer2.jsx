@@ -18,7 +18,7 @@ const Footer = () => {
             >
               <h3 className="text-[#2b9150] font-bold mb-3">Find us</h3>
               <p className="text-gray-400">
-                SGC Office S#23, 3rd Floor, Malikabad Centre near 6th Rd, Murree
+                SAT Office S#23, 3rd Floor, Malikabad Centre near 6th Rd, Murree
                 Rd, Rawalpindi
               </p>
             </Link>

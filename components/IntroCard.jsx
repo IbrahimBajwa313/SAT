@@ -14,7 +14,7 @@ const IntroCard = () => {
   return (
     <div
       className="relative h-[90vh] bg-cover bg-center poppins"
-      style={{ backgroundImage: "url('/banner.jpg')" }}
+      style={{ backgroundImage: "url('/satbg.png')" }}
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-70"></div>
@@ -41,7 +41,7 @@ const IntroCard = () => {
             </Link>
             <Link href={"/virtualAdoption"} >
               <button className="text-lg md:text-xl font-bold bg-transparent border-2 border-white px-6 md:px-8 py-3 md:py-4 rounded-full text-white hover:bg-[#D0312D] hover:text-[#fff] hover:border-[#D0312D] transition-all ease-in-out duration-200">
-                Adopt a Child of Gaza
+                Adopt a Gazan Child 
               </button>
             </Link>
           </div>
