@@ -4,7 +4,7 @@ import IntroCard from "@/components/IntroCard";
 import HelpCounter from "@/components/HelpCounter";
 import { useInView } from "react-hook-inview";
 import Services2 from "@/components/Services2";
-import AboutUs from "@/components/AboutUs";
+import About from "@/components/AboutUs";
 import FAQs from "@/components/FAQs";
 import Collabrators from "@/components/Collabrators";
 
@@ -17,7 +17,7 @@ export default function Home() {
     <main className="overflow-hidden w-[100%] z-20">
       <IntroCard />
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
-        <AboutUs />
+        <About />
         <Services2 />
         <Collabrators />
         <FAQs />
