@@ -1,25 +1,34 @@
 import React from 'react';
 
-const NgoInfo = () => {
+const About = () => {
   return (
-    <div className="max-w-4xl mx-auto p-5 bg-white rounded-lg shadow-lg">
-      <h1 className="text-2xl font-bold mb-4">What does Dr. Osama Riaz have to say about his NGO?</h1>
-      <p className="mb-4">
-      <span className="font-bold text-[#22C55E]">SHAB-E-ABI TALIB</span> a remarkable NGO established by students, is dedicated to aiding impoverished communities in Pakistan. With a deep commitment to making a positive impact, its mission is to provide support and assistance to those in need...
+    <div className="max-w-4xl mx-auto p-8 bg-gradient-to-r from-white to-gray-100 rounded-3xl shadow-2xl border border-gray-200 transition-all duration-300 hover:shadow-xl">
+      <h1 className="text-3xl font-extrabold mb-6 text-gray-900 tracking-wide text-center">
+        What does <span className="text-[#22C55E]">Dr. Osama Riaz</span> have to say about his NGO?
+      </h1>
+      
+      <p className="mb-6 text-gray-700 text-lg leading-relaxed text-center">
+        <span className="font-bold text-[#22C55E] text-xl">SHAB-E-ABI TALIB</span>, a remarkable NGO established by students, is dedicated to aiding impoverished communities in Pakistan. With a deep commitment to making a positive impact, its mission is to provide support and assistance to those in need.
       </p>
-      <h2 className="text-xl font-semibold mb-2">Inspiration Behind the NGO</h2>
-      <p className="mb-4">
-        The journey began with a vision to uplift the less privileged. Through their efforts, they strive to enhance the quality of life for those struggling to meet basic needs.
-      </p>
-      <h2 className="text-xl font-semibold mb-2">Projects and Initiatives</h2>
-      <p>
-        Our projects range from medical outreach to educational camps, all aimed at fostering community development and empowerment.
-      </p>
+
+      <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#22C55E] mb-6">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-3">✨ Inspiration Behind the NGO</h2>
+        <p className="text-gray-600 text-lg">
+          The journey began with a vision to uplift the less privileged. Through their efforts, they strive to enhance the quality of life for those struggling to meet basic needs.
+        </p>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl shadow-md border-l-4 border-[#22C55E]">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-3">🚀 Projects and Initiatives</h2>
+        <p className="text-gray-600 text-lg">
+          Our projects range from medical outreach to educational camps, all aimed at fostering community development and empowerment.
+        </p>
+      </div>
     </div>
   );
 };
 
-export default NgoInfo;
+export default About;
 
 
 // import React from "react";
