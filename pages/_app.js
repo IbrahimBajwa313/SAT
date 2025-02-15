@@ -6,8 +6,7 @@ import Link from "next/link";
 import "@/styles/globals.css";
 import Head from "next/head";
 import { useState, useEffect, createContext, useContext } from "react";
-import Headroom from "react-headroom";
-import Chatbot from "@/components/Chatbot";
+import Headroom from "react-headroom"; 
 import { Analytics } from "@vercel/analytics/react"
 
 export const productInfo = createContext();
@@ -39,7 +38,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Link
         href={whatsappLink} // Use the whatsappLink variable
-        className="fixed bottom-14 left-2 rounded-full bg-white/[0.25] text-green-500 duration-200 hover:scale-110 cursor-pointer"
+        className="fixed bottom-14 right-10 rounded-full bg-white/[0.25] text-green-500 duration-200 hover:scale-110 cursor-pointer"
         target="_blank"
         rel="noopener noreferrer"
       >
