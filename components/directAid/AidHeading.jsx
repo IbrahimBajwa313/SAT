@@ -13,7 +13,7 @@ const AidPortal = () => {
       {/* Content Section */}
       <div className="relative w-[45%] text-white flex flex-col justify-center gap-4">
         <h1 className="w-[70%] text-3xl md:text-7xl font-bold tracking-wide">
-          SGC Direct Aid Portal
+          SAT Direct Aid Portal
         </h1>
         <p className="text-base md:text-xl max-w-3xl">
           A platform to connect <span className="font-semibold">verified</span>{" "}

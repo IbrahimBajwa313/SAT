@@ -15,7 +15,7 @@ const SubscriptionHeading = () => {
       {/* Content */}
       <div className="relative flex flex-col items-center justify-center h-full text-white px-4 md:px-24">
         <h3 className="text-sm md:text-lg font-medium tracking-widest uppercase mb-2">
-          SGC Monthly Subscription
+          SAT Monthly Subscription
         </h3>
         <hr className="w-48 md:w-72 border-t border-white mb-4" />
         <h1 className="w-full md:w-[50%] text-2xl md:text-4xl lg:text-6xl font-bold leading-tight text-center">

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Contact = () => {
   const phoneNumber = "+923325000418";
-  const message = "AsslamoAlikum! I am contacting you through SGC Site. I want to adopt a child. Please tell me the procedure.";
+  const message = "AsslamoAlikum! I am contacting you through SAT Site. I want to adopt a child. Please tell me the procedure.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;

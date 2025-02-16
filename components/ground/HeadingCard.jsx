@@ -15,14 +15,14 @@ const HeadingCard = () => {
       {/* Content */}
       <div className="relative flex flex-col items-center justify-center h-full text-center text-white px-4">
         <h3 className="text-lg font-medium tracking-widest uppercase mb-2">
-          SGC Relief Activities
+          SAT Relief Activities
         </h3>
         <hr className="w-72 border-t border-white mb-4" />
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-          SGC OnGround Activities
+          SAT OnGround Activities
         </h1>
         <p className="text-base md:text-lg mt-4 max-w-2xl">
-          SGC OnGround Activities in Gaza provide essential services to support
+          SAT OnGround Activities in Gaza provide essential services to support
           the community, including Food Camps, Cloth Drives, and Medical Camps.
           Join us in making a positive impact and bringing relief to Gaza.
         </p>

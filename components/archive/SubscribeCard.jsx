@@ -26,7 +26,7 @@
 //         {/* Form Section */}
 //         <div className="flex-1">
 //           <h1 className="text-2xl font-bold text-[#22C55E]">
-//             SGC Monthly Subscription
+//             SAT Monthly Subscription
 //           </h1>
 //           <form className="mt-6 space-y-4">
 //             <div>

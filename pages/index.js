@@ -4,9 +4,10 @@ import IntroCard from "@/components/IntroCard";
 import HelpCounter from "@/components/HelpCounter";
 import { useInView } from "react-hook-inview";
 import Services2 from "@/components/Services2";
-import About from "@/components/AboutUs";
+import AboutUs from "@/components/AboutUs";
 import FAQs from "@/components/FAQs";
 import Collabrators from "@/components/Collabrators";
+import About from "@/components/About";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -17,9 +18,10 @@ export default function Home() {
     <main className="overflow-hidden w-[100%] z-20">
       <IntroCard />
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
-        <About />  
+        <AboutUs />  
+        {/* <About />   */}
         <Services2 />
-        <Collabrators />
+        {/* <Collabrators /> */}
         {/* <FAQs /> */}
       </Wrapper>
       <HelpCounter />

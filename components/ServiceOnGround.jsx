@@ -18,14 +18,14 @@ export default function Service() {
       <div className="md:bg-white md:rounded-2xl md:shadow-lg px-8 md:px-16 py-8 md:py-12">
         <div className="w-auto flex flex-col justify-start items-start text-black relative -top-6">
           <h3 className="text-xl pb-8 md:text-3xl font-semibold md:bg-[#22C55E] md:text-white md:p-8 rounded-[2rem] md:relative md:-top-16">
-            SGC OnGround Activities
+            SAT OnGround Activities in Gaza
           </h3>
           <span className="flex flex-col gap-2">
             <p className="text-sm md:text-2xl font-semibold tracking-wider">
               Supporting Gaza with Essential Services
             </p>
             <p className="text-sm md:text-lg font-light">
-              SGC OnGround Activities in Gaza provide essential services to
+              SAT OnGround Activities in Gaza provide essential services to
               support the community. Our Food Camps, Cloth Drive, and Medical
               Camps ensure nourishment, warmth, and health. Join us in making a
               positive impact and bringing relief to Gaza.

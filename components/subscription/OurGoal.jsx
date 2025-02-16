@@ -36,7 +36,7 @@ const AboutUsSection = () => {
           Our Goal is to Help <br /> Gazans in Need
         </h2>
         <p className="text-gray-600 leading-relaxed mb-6 text-center md:text-left">
-          At SGC, our mission is to provide essential support to the
+          At SAT, our mission is to provide essential support to the
           underprivileged communities in Gaza. We strive to make a positive
           impact through various initiatives aimed at improving the quality of
           life for those in need.

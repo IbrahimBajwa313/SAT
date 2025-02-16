@@ -17,14 +17,14 @@ export default function ServiceSubscriptionAdoption() {
         <div className="bg-white rounded-2xl shadow-lg px-6 py-8 lg:px-16 lg:py-12 w-full">
           <div className="flex flex-col justify-center items-start gap-4 text-black">
             <h3 className="text-xl lg:text-3xl font-semibold">
-              SGC Monthly Subscription
+              SAT Monthly Subscription
             </h3>
             <span className="flex flex-col gap-2">
               <p className="text-lg font-semibold tracking-wider">
                 Support Gaza with a Monthly Contribution
               </p>
               <p className="text-sm lg:text-base font-light">
-                Join the SGC Monthly Subscription program to provide continuous
+                Join the SAT Monthly Subscription program to provide continuous
                 support to the people of Gaza. Your monthly contributions will
                 help fund essential services and relief efforts, ensuring
                 sustained aid and support for those in need.
@@ -46,14 +46,14 @@ export default function ServiceSubscriptionAdoption() {
         <div className="bg-white rounded-2xl shadow-lg px-6 py-8 lg:px-16 lg:py-12 w-full">
           <div className="flex flex-col justify-center items-start gap-4 text-black">
             <h3 className="text-xl lg:text-3xl font-semibold">
-              SGC Virtual Adoption
+              SAT Virtual Adoption
             </h3>
             <span className="flex flex-col gap-2">
               <p className="text-lg font-semibold tracking-wider">
                 Virtually Adopt a Child in Gaza
               </p>
               <p className="text-sm lg:text-base font-light">
-                Through SGC Virtual Adoption, you can provide for a child&apos;s
+                Through SAT Virtual Adoption, you can provide for a child&apos;s
                 needs in Gaza. Your support will cover essentials such as food,
                 clothing, and education, making a significant impact on their
                 life and future.
@@ -82,14 +82,14 @@ export default function ServiceSubscriptionAdoption() {
   {/* <div className="bg-white rounded-2xl shadow-lg px-6 py-8 lg:px-16 lg:py-12 w-full">
     <div className="flex flex-col justify-center items-start gap-4 text-black">
       <h3 className="text-xl lg:text-3xl font-semibold">
-        SGC Virtual Adoption
+        SAT Virtual Adoption
       </h3>
       <span className="flex flex-col gap-2">
         <p className="text- lg:text-lg font-semibold tracking-wider">
           Virtually Adopt a Child in Gaza
         </p>
         <p className="text-sm lg:text-base font-light">
-          Through SGC Virtual Adoption, you can provide for a child&apos;s
+          Through SAT Virtual Adoption, you can provide for a child&apos;s
           needs in Gaza. Your support will cover essentials such as food,
           clothing, and education, making a significant impact on their
           life and future.

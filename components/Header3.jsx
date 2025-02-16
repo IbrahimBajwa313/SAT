@@ -74,12 +74,12 @@ export default function Header() {
             </Link>
 
             <Link
-              href="https://savegazacampaign.org"
+              href="/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                SAT Main Site
+                SAT Activities
               </span>{" "}
             </Link>
 

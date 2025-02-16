@@ -15,7 +15,7 @@ const AdoptionHero = () => {
       {/* Content */}
       <div className="relative flex flex-col items-center justify-center h-full text-white px-4 sm:px-8 md:px-16 lg:px-24">
         <h3 className="text-sm sm:text-lg font-medium tracking-widest uppercase mb-2">
-          SGC Virtual Adoption
+          SAT Virtual Adoption
         </h3>
         <hr className="w-48 sm:w-72 border-t border-white mb-4" />
         <h1 className="w-full sm:w-[75%] md:w-[60%] lg:w-[50%] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-center">

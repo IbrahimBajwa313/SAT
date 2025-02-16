@@ -16,7 +16,7 @@ export default function AboutUs() {
         {/* left */}
         <div className="w-full md:w-[57%] h-auto md:h-[60vh] rounded-2xl bg-[#fff] shadow-lg text-black">
           <h3 className="text-3xl md:text-5xl text-center bg-[#22C55E] p-6 rounded-t-2xl text-white">
-            Shab e Abi Talib Foundation
+            SAT in Pakistan
           </h3>
           {/* 
           <hr className="border-2 rounded-2xl my-4 border-[#22C55E]" /> */}
@@ -24,12 +24,9 @@ export default function AboutUs() {
           <div className="flex flex-col h-auto md:h-[80%] justify-evenly p-8">
             <p className="text-sm md:text-lg font-normal pt-4">
               <span className="font-semibold text-[#22C55E]">
-                Shab e Abi Talib Foundation
+                Shab e Abi Talib 
               </span>{" "}
-              is a movement of hope and resilience, uniting voices for justice
-              and compassion. Since our inception in November 2023, we strive to
-              uplift the oppressed and foster solidarity among communities,
-              ensuring that every individual feels valued and heard.
+               a remarkable NGO established by students, is dedicated to aiding impoverished communities in Pakistan. With a deep commitment to making a positive impact, their mission is to provide support and assistance to those in need. Through their tireless efforts, they strive to uplift the lives of the underprivileged. It&apos;s truly inspiring to witness the dedication and compassion of these young individuals as they work towards creating a brighter future for those in need.
             </p>
 
             <br />
@@ -71,7 +68,7 @@ export default function AboutUs() {
         {/* right */}
         <div className="w-full md:w-[41%] h-auto md:h-[70vh] rounded-2xl bg-[#fff] text-black shadow-lg ">
           <h3 className="text-3xl md:text-4xl text-center bg-[#22C55E] rounded-t-2xl p-4 text-white">
-            SAT Relief Activities
+            SAT Gaza Relief Activities
           </h3>
 
           {/* <hr className="border-2 rounded-2xl my-3 border-[#22C55E]" /> */}
@@ -79,17 +76,17 @@ export default function AboutUs() {
           <div className="flex flex-col h-auto md:h-[80%] justify-evenly p-8">
             <p className="text-sm md:text-lg font-normal pt-4">
               <span className="font-semibold text-[#22C55E]">
-                SAT Relief Activities
+                SAT Gaza Relief Activities
               </span>{" "}
               deals with all donations and relief efforts for the people of
               Palestine. Our goal is to help the people in need in any way
               possible and make whatever effort we can by donating clothes,
               food, medicine and money.
             </p>
-            <p className="text-sm md:text-lg font-normal pt-4">
+            {/* <p className="text-sm md:text-lg font-normal pt-4">
               We with our partner <span className="font-semibold text-[#22C55E]">Shab-e-AbiTalib </span> want to make the most
               difference.
-            </p>
+            </p> */}
 
             <div className="flex flex-col  justify-center items-center ">
               <p className="text- md:text-xl font-semibold pt-4">

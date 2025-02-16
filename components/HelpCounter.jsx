@@ -49,7 +49,7 @@ export default function HelpCounter() {
     return (
       <div
         ref={ref}
-        className="flex flex-row gap-8 justify-center items-center text-white rounded-2xl shadow-lg p-4"
+        className="flex flex-row gap-8 justify-center items-center text-black rounded-2xl shadow-lg p-4"
       >
         {counter.icon}
         <div className="flex flex-col justify-center items-center">
@@ -76,7 +76,7 @@ export default function HelpCounter() {
   return (
     <div className="bg-[url('/a5.jpeg')] bg-cover bg-center h-[30vh] max-h-[500px] min-h-[450px] px-4 sm:px-8 md:px-16 lg:px-28 flex flex-col justify-center items-center gap-8 overflow-hidden">
       <Heading
-        className="text-white text-center text-2xl sm:text-3xl md:text-4xl font-bold"
+        className="text-black text-center text-2xl sm:text-3xl md:text-4xl font-bold"
         text="Our Efforts"
       />
       <div className="flex flex-wrap justify-between items-center sm:gap-10 w-full">
