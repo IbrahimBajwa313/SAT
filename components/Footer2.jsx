@@ -18,8 +18,7 @@ const Footer = () => {
             >
               <h3 className="text-[#2b9150] font-bold mb-3">Find us</h3>
               <p className="text-gray-400">
-                SAT Office S#23, 3rd Floor, Malikabad Centre near 6th Rd, Murree
-                Rd, Rawalpindi
+                dummy address
               </p>
             </Link>
           </div>
@@ -42,16 +41,16 @@ const Footer = () => {
         {/* Logo and Social Links */}
         <div className="lg:col-span-1">
           <h1 className="text-xl lg:text-2xl font-bold mb-3 flex items-center">
-            <Image
+            {/* <Image
               src="/save-gaza-logo.png"
               width={32}
               height={32}
               className="w-8 mr-4"
               alt="Logo"
-            />
-            <span className="text-[#2b9150]">Save Gaza Campaign</span>
+            /> */}
+            <span className="text-[#2b9150]">Shab Abitalib</span>
           </h1>
-          <p className="text-gray-400 mb-5">Stand for Gaza & Unite for Gaza</p>
+          <p className="text-gray-400 mb-5">Stand for Gaza & Unite for Ummah</p>
           <div className="flex space-x-4 mt-4 sm:mt-8">
             <Link
               href="https://m.facebook.com/SaveGazaCampaign/"
