@@ -41,13 +41,13 @@ const Footer = () => {
         {/* Logo and Social Links */}
         <div className="lg:col-span-1">
           <h1 className="text-xl lg:text-2xl font-bold mb-3 flex items-center">
-            {/* <Image
-              src="/save-gaza-logo.png"
+            <Image
+              src="/shab-logo.png"
               width={32}
               height={32}
               className="w-8 mr-4"
               alt="Logo"
-            /> */}
+            />
             <span className="text-[#2b9150]">Shab Abitalib</span>
           </h1>
           <p className="text-gray-400 mb-5">Stand for Gaza & Unite for Ummah</p>
@@ -173,8 +173,8 @@ const Footer = () => {
       {/* Footer Bottom */}
       <div className="container mx-auto text-center py-6 px-4">
         <p className="text-gray-400 mb-4">
-          Copyright © 2024. All Rights Reserved{" "}
-          <span className="text-[#2b9150]">Save Gaza Campaign</span>
+          Copyright © 2025. All Rights Reserved{" "}
+          <span className="text-[#2b9150]">Shab Abitalib</span>
         </p>
         <div className="space-x-4">
           <Link href="#" className="text-gray-400 hover:text-white">
