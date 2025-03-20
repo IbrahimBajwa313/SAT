@@ -4,8 +4,9 @@ import ListItem from "@/components/ListItem";
 import Image from "next/image";
 
 export default function Header() {
-  const phoneNumber = "+923325000418";
-  const message = "AsslamoAlikum! I am contacting you through SAT Site. I want to collaborate in Gaza Relief Activities. Please send the details and the account number.";
+  const phoneNumber = "+923367000304";
+  const message =
+    "AsslamoAlikum! I am contacting you through SAT Site. I want to collaborate in Gaza Relief Activities. Please send the details and the account number.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message
   )}`;
@@ -32,9 +33,8 @@ export default function Header() {
   const handleToggle = () => {
     setIsToggled(!isToggled);
   };
- 
-    
-    const items2 = ["About", "SAT Main Site", "Gaza Activities"];
+
+  const items2 = ["About", "SAT Main Site", "Gaza Activities"];
   const list2 = items2.map((item, index, url) => {
     return <ListItem key={index} itemName={item} url={url} />;
   });
@@ -47,7 +47,7 @@ export default function Header() {
     >
       <div className="flex justify-between items-center">
         <div className="flex items-center space-x-4">
-        <Link href={"/"}>
+          <Link href={"/"}>
             <div className="flex items-center space-x-4">
               <Image
                 src="/shab-logo.png"
@@ -57,7 +57,7 @@ export default function Header() {
                 width={48}
               />
               <span className="text-1xl md:text-2xl font-bold hover:text-gray-500">
-              Shab e Abitalib 
+                Shab e Abitalib
               </span>
             </div>
           </Link>
@@ -66,40 +66,38 @@ export default function Header() {
         <nav className="flex items-center space-x-8">
           {/* Navigation Links */}
           <span className="hidden md:flex items-center space-x-8">
-
-            <Link href="/about" >
+            <Link href="/about">
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                About 
+                About
               </span>{" "}
             </Link>
 
-            <Link
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="/" target="_blank" rel="noopener noreferrer">
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
                 SAT Activities
               </span>{" "}
             </Link>
 
-            <Link href="https://SAT-blogs-3.vercel.app/category/6762389a587d34c99391e320"
-            target="_blank"
-            rel="noopener noreferrer">
+            <Link
+              href="https://SAT-blogs-3.vercel.app/category/6762389a587d34c99391e320"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
                 Gaza Activities
               </span>
             </Link>
- 
           </span>
 
-          {/* Login Button */}
-          <Link href={whatsappLink} legacyBehavior target="_blank" rel="noopener noreferrer">
-          <button className="hidden md:flex bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md transition-colors duration-300">
-              Donate Now
-          </button>
+          {/* Donate Button */}
+          <Link href={whatsappLink} legacyBehavior>
+            <a target="_blank" rel="noopener noreferrer">
+              <button className="hidden md:flex bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md transition-colors duration-300">
+                Donate Now
+              </button>
+            </a>
           </Link>
- 
+
           <span
             className={`mr-2 cursor-pointer flex md:hidden ${
               isIconClicked2
@@ -148,8 +146,7 @@ export default function Header() {
           <div
             onClick={handleToggle}
             className="flex items-center cursor-pointer"
-          >
-          </div> 
+          ></div>
         </div>
       </div>
     </header>
