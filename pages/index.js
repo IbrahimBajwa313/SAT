@@ -18,8 +18,8 @@ export default function Home() {
   return (
     <main className="overflow-hidden w-[100%] z-20">
       <HeroBanner />
-      <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         <AboutUs />  
+      <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         {/* <About />   */}
         <Services2 />
         {/* <Collabrators /> */}
