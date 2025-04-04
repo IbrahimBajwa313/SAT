@@ -49,24 +49,21 @@ export default function HelpCounter() {
     return (
       <div
         ref={ref}
-        className="flex flex-row gap-8 justify-center items-center text-black rounded-2xl shadow-lg p-4"
+        className="flex flex-col gap-4 justify-center items-center text-black rounded-2xl shadow-lg p-6 bg-white transition-transform transform hover:scale-105"
       >
         {counter.icon}
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center text-center">
           {inView && (
             <CountUp
               start={0}
               end={counter.endValue}
               duration={counter.duration}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold"
             />
           )}
-          <span className="mt-2 text-sm sm:text-base md:text-lg text-center  ">
+          <span className="mt-2 text-base sm:text-lg md:text-xl">
             {counter.label}
-            <span className="text-xs sm:text-sm md:text-base font-mono text-[#22C55E]">
-              {" "}
-              / Month
-            </span>
+            <span className="text-sm font-mono text-[#22C55E]"> / Month</span>
           </span>
         </div>
       </div>
@@ -74,12 +71,12 @@ export default function HelpCounter() {
   };
 
   return (
-    <div className="bg-[url('/a5.jpeg')] bg-cover bg-center h-[30vh] max-h-[500px] min-h-[450px] px-4 sm:px-8 md:px-16 lg:px-28 flex flex-col justify-center items-center gap-8 overflow-hidden">
+    <div className="bg-cover bg-center h-[40vh] max-h-[500px] min-h-[450px] px-4 sm:px-8 md:px-16 lg:px-28 flex flex-col justify-center items-center gap-12 overflow-hidden bg-gradient-to-b from-white to-gray-100">
       <Heading
-        className="text-black text-center text-2xl sm:text-3xl md:text-4xl font-bold"
+        className="text-black text-center text-3xl sm:text-4xl md:text-5xl font-bold"
         text="Our Efforts"
       />
-      <div className="flex flex-wrap justify-between items-center sm:gap-10 w-full">
+      <div className="flex flex-wrap justify-center items-center gap-8 w-full">
         {counters.map((counter) => (
           <CounterBox key={counter.id} counter={counter} />
         ))}

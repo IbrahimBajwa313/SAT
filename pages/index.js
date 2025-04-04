@@ -9,6 +9,7 @@ import FAQs from "@/components/FAQs";
 import Collabrators from "@/components/Collabrators";
 import About from "@/components/About";
 import HeroBanner from "@/components/HeroBanner";
+import DonationTransparency from "@/components/transparency";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -21,6 +22,8 @@ export default function Home() {
         <AboutUs />  
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         {/* <About />   */}
+        <DonationTransparency />
+        
         <Services2 />
         {/* <Collabrators /> */}
         {/* <FAQs /> */}

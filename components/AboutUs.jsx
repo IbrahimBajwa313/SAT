@@ -18,7 +18,7 @@ export default function AboutUs() {
         {/* Text Section */}
         <div className="md:w-1/2 p-12 flex flex-col justify-center">
           <h1 className="text-red-600 text-4xl font-bold mb-6 leading-tight">
-            Welcome to <br />
+            Who are we <br />
             <span className="text-black">Shab e Abotalib Foundation.</span>
           </h1>
           <p className="text-gray-700 text-lg leading-relaxed mb-6">
