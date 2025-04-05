@@ -79,12 +79,12 @@ export default function Header() {
             </Link>
 
             <Link
-              href="https://SAT-blogs-3.vercel.app/category/6762389a587d34c99391e320"
+              href="/donation-transparency"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span className="hover:text-green-500 cursor-pointer transition-colors duration-300">
-                Gaza Activities
+                Donations Flowchart
               </span>
             </Link>
           </span>
