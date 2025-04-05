@@ -9,7 +9,7 @@ const flowSteps = [
   { icon: "🧑‍🔧", text: "They perform the relief projects as per the need and plan" },
 ];
 
-export default function DonationTransparency() {
+export default function Transparency() {
   return (
     <section className="py-16 bg-gray-100">
       <div className="container mx-auto text-center">
