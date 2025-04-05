@@ -65,7 +65,7 @@ export default function DonationTransparency() {
 
         <div className="mt-12">
           <Image
-            src="/images/donation-process.png"
+            src="/DonationFlowchart.png"
             width={800}
             height={400}
             alt="Donation Process"
