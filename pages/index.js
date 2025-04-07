@@ -10,7 +10,7 @@ import Collabrators from "../components/Collabrators";
 import About from "../components/About";
 import HeroBanner from "../components/HeroBanner"; 
 import Transparency from "../components/Transparency";
-import Gazaprojects from "../components/gazaprojects";
+import Gazaprojects from "../components/Gazaprojects";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

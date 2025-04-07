@@ -1,4 +1,3 @@
-import Heading from "@/components/Heading";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   FaHandsHelping,
@@ -20,11 +19,14 @@ const flowSteps = [
 export default function DonationTransparencyPage() {
   return (
     <section className="min-h-screen flex flex-col justify-center bg-gray-100">
-    <div className="container mx-auto text-center px-4 py-8"> 
-        <Heading
-                text="Join Us in the Mission"
-                className="text-black text-center mb-4 md:mb-16"
-              />        
+    <div className="container mx-auto text-center px-4 py-8">
+      <h2 className="text-4xl font-bold text-gray-800 mb-6">
+        100% Donation Transparency
+      </h2>
+      <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+        Every donation you make reaches Gaza directly via Binance, ensuring immediate support
+        for food, medical aid, shelter, and more. Your contributions bring hope to those in need.
+      </p>
   
       {/* Flowchart Representation */}
       <div className="mt-12">

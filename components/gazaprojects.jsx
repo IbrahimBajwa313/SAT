@@ -9,17 +9,15 @@ const flowSteps = [
   { icon: "🧑‍🔧", text: "They perform the relief projects as per the need and plan" },
 ];
 
-export default function Services() {
+export default function Gazaprojects() {
   return (
     <section className="py-16 bg-gray-100">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6">100% Donation Transparency</h2>
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-          Every donation you make reaches Gaza directly via Binance, ensuring immediate support
-          for food, medical aid, shelter, and more. Your contributions bring hope to those in need.
-        </p>
+      <h2 className="text-4xl font-bold text-gray-800 mb-6">Join Us in Our Mission</h2>
+<p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+  Discover our ongoing initiatives aimed at providing essential support and relief to the Gazans. Your involvement is crucial in helping us bring hope and resilience to the Gazans.
+</p>
 
-         
 
         {/* Transparent Usage Cards */}
         <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
