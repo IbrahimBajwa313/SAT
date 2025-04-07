@@ -10,6 +10,7 @@ import Collabrators from "../components/Collabrators";
 import About from "../components/About";
 import HeroBanner from "../components/HeroBanner"; 
 import Transparency from "../components/Transparency";
+import Gazaprojects from "../components/gazaprojects";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -23,8 +24,9 @@ export default function Home() {
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         {/* <About />   */}
         <Transparency />
+        <Gazaprojects />
         
-        <Services2 />
+        {/* <Services2 /> */}
         {/* <Collabrators /> */}
         {/* <FAQs /> */}
       </Wrapper>

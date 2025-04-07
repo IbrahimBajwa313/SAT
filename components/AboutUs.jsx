@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutUs() {
   return (
-    <div className="bg-gray-100 min-h-screen flex justify-center items-center p-10">
+    <div className="bg-blue-50 min-h-screen flex justify-center items-center p-10">
       <div className="bg-white shadow-2xl rounded-2xl overflow-hidden max-w-6xl w-full flex flex-col md:flex-row">
         {/* Image Section */}
         <div className="md:w-1/2">
