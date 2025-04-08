@@ -1,73 +1,73 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { FaHandsHelping, FaTshirt, FaHome, FaHeartbeat, FaChild, FaMoneyBillWave } from "react-icons/fa";
+import Link from "next/link";
 
-const flowSteps = [
-  { icon: "🤲", text: "Your Contributions" },
-  { icon: "💳", text: "SAT Accounts" },
-  { icon: "💵", text: "Dollars Purchased" },
-  { icon: "✈️", text: "Sent via Binance or other ways to our volunteers in Gaza" },
-  { icon: "🧑‍🔧", text: "They perform the relief projects as per the need and plan" },
-];
+export default function ProjectsOverview() {
+  const pakistanProjects = [
+    "🏥 Medical Camps / Dispensaries",
+    "☀️ Solar Powered Water Pumps",
+    "🏫 Education (School Project)",
+    "👩‍🔧 Women Empowerment",
+    "🛒 Ration Drives",
+  ];
 
-export default function Gazaprojects() {
+  const palestineProjects = [
+    "🥘 Food & Water Distribution",
+    "🚑 Medical Assistance",
+    "🧥 Clothing & Essentials",
+    "🏠 Shelter & Housing",
+    "👨‍👩‍👧‍👦 Family Support Program",
+    "💵 Cash Distribution",
+    "🛍️ Ration Drives",
+    "🕋 Qurbani Project",
+    "🌙 Ramadan Special Project",
+  ];
+
   return (
-    <section className="py-16 bg-gray-100">
-      <div className="container mx-auto text-center">
-      <h2 className="text-4xl font-bold text-gray-800 mb-6">Join Us in Our Mission</h2>
-<p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-  Discover our ongoing initiatives aimed at providing essential support and relief to the Gazans. Your involvement is crucial in helping us bring hope and resilience to the Gazans.
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#f8fafc] to-[#e2e8f0]">
+      <div className="max-w-7xl mx-auto text-center">
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-6">🌍 Our Ongoing Efforts</h2>
+        <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-12">
+  Carrying the spirit of <span className="font-semibold">Shab e Abi Talib Foundation</span>,<br />
+  we rise to serve those in hardship — from <span className="font-bold">🇵🇰 Pakistan</span> to <span className="font-bold">🇵🇸 Palestine</span>.
 </p>
 
 
-        {/* Transparent Usage Cards */}
-        <div className="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <Card className="p-6 bg-white shadow-lg border border-gray-200 rounded-2xl">
-            <FaHandsHelping className="text-5xl text-green-500 mx-auto mb-4" />
-            <CardContent>
-              <h3 className="text-xl font-semibold text-gray-700">Food & Water Distribution</h3>
-              <p className="text-gray-500 mt-2">Providing essentials like food & clean water to families in Gaza.</p>
-            </CardContent>
-          </Card>
+        {/* 🇵🇰 Pakistan Projects */}
+        <div className="mb-16">
+          <h3 className="text-2xl sm:text-3xl font-bold text-green-700 mb-6">🇵🇰 Pakistan Projects</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {pakistanProjects.map((project, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-2xl shadow-md p-5 text-gray-800 font-medium hover:shadow-xl transition duration-300"
+              >
+                {project}
+              </div>
+            ))}
+          </div>
+        </div>
 
-          <Card className="p-6 bg-white shadow-lg border border-gray-200 rounded-2xl">
-            <FaHeartbeat className="text-5xl text-red-500 mx-auto mb-4" />
-            <CardContent>
-              <h3 className="text-xl font-semibold text-gray-700">Medical Assistance</h3>
-              <p className="text-gray-500 mt-2">Supporting medical aid & emergency treatments.</p>
-            </CardContent>
-          </Card>
+        {/* 🇵🇸 Palestine Projects */}
+        <div>
+          <h3 className="text-2xl sm:text-3xl font-bold text-red-700 mb-6">🇵🇸 Palestine Projects</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {palestineProjects.map((project, idx) => (
+              <div
+                key={idx}
+                className="bg-white rounded-2xl shadow-md p-5 text-gray-800 font-medium hover:shadow-xl transition duration-300"
+              >
+                {project}
+              </div>
+            ))}
+          </div>
+        </div>
 
-          <Card className="p-6 bg-white shadow-lg border border-gray-200 rounded-2xl">
-            <FaHome className="text-5xl text-blue-500 mx-auto mb-4" />
-            <CardContent>
-              <h3 className="text-xl font-semibold text-gray-700">Shelter & Housing</h3>
-              <p className="text-gray-500 mt-2">Providing shelter to displaced families.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="p-6 bg-white shadow-lg border border-gray-200 rounded-2xl">
-            <FaTshirt className="text-5xl text-indigo-500 mx-auto mb-4" />
-            <CardContent>
-              <h3 className="text-xl font-semibold text-gray-700">Clothing & Essentials</h3>
-              <p className="text-gray-500 mt-2">Distributing clothes and necessities.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="p-6 bg-white shadow-lg border border-gray-200 rounded-2xl">
-            <FaChild className="text-5xl text-yellow-500 mx-auto mb-4" />
-            <CardContent>
-              <h3 className="text-xl font-semibold text-gray-700">Toys for Children</h3>
-              <p className="text-gray-500 mt-2">Bringing joy to kids with toys and gifts.</p>
-            </CardContent>
-          </Card>
-
-          <Card className="p-6 bg-white shadow-lg border border-gray-200 rounded-2xl">
-            <FaMoneyBillWave className="text-5xl text-emerald-500 mx-auto mb-4" />
-            <CardContent>
-              <h3 className="text-xl font-semibold text-gray-700">Cash Distribution</h3>
-              <p className="text-gray-500 mt-2">Directly distributing funds to families most in need.</p>
-            </CardContent>
-          </Card>
+        {/* Learn More Button */}
+        <div className="mt-12">
+          <Link href="/our-projects">
+            <button className="inline-flex items-center px-6 py-3 bg-green-600 hover:bg-green-700 text-white text-lg rounded-full shadow transition duration-300">
+              Learn More →
+            </button>
+          </Link>
         </div>
       </div>
     </section>
