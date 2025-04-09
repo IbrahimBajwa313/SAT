@@ -24,7 +24,7 @@ export default function ProjectsOverview() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#f8fafc] to-[#e2e8f0]">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-6">🌍 Our Ongoing Efforts</h2>
+        <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-6">Our Ongoing Efforts</h2>
         <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-12">
   Carrying the spirit of <span className="font-semibold">Shab e Abi Talib Foundation</span>,<br />
   we rise to serve those in hardship — from <span className="font-bold">🇵🇰 Pakistan</span> to <span className="font-bold">🇵🇸 Palestine</span>.
