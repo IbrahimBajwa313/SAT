@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ProjectsOverview() {
   const pakistanProjects = [
     "🏥 Medical Camps / Dispensaries",
-    "☀️ Solar Powered Water Pumps",
+    "☀️ Solar-Powered Water Pumps",
     "🏫 Education (School Project)",
     "👩‍🔧 Women Empowerment",
     "🛒 Ration Drives",
@@ -26,10 +26,9 @@ export default function ProjectsOverview() {
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800 mb-6">Our Ongoing Efforts</h2>
         <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-12">
-  Carrying the spirit of <span className="font-semibold">Shab e Abi Talib Foundation</span>,<br />
-  we rise to serve those in hardship — from <span className="font-bold">🇵🇰 Pakistan</span> to <span className="font-bold">🇵🇸 Palestine</span>.
-</p>
-
+          Carrying the spirit of <span className="font-semibold">Shab e Abi Talib Foundation</span>,<br />
+          we rise to serve those in hardship — from <span className="font-bold">🇵🇰 Pakistan</span> to <span className="font-bold">🇵🇸 Palestine</span>.
+        </p>
 
         {/* 🇵🇰 Pakistan Projects */}
         <div className="mb-16">
@@ -39,6 +38,7 @@ export default function ProjectsOverview() {
               <div
                 key={idx}
                 className="bg-white rounded-2xl shadow-md p-5 text-gray-800 font-medium hover:shadow-xl transition duration-300"
+                aria-label={`Pakistan Project: ${project}`}
               >
                 {project}
               </div>
@@ -54,6 +54,7 @@ export default function ProjectsOverview() {
               <div
                 key={idx}
                 className="bg-white rounded-2xl shadow-md p-5 text-gray-800 font-medium hover:shadow-xl transition duration-300"
+                aria-label={`Palestine Project: ${project}`}
               >
                 {project}
               </div>
