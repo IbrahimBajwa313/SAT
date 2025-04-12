@@ -34,7 +34,7 @@ const Footer = () => {
           <i className="fa-solid fa-envelope-open text-2xl lg:text-3xl text-[#2b9150] mr-4"></i>
           <div>
             <h3 className="text-[#2b9150] font-bold mb-3">Mail us</h3>
-            <p className="text-gray-400">tameer2k23@gmail.com</p>
+            <p className="text-gray-400">shabeabitalib@gmail.com</p>
           </div>
         </div>
 

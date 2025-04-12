@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Link
         href={whatsappLink} // Use the whatsappLink variable
-        className="fixed bottom-14 right-10 rounded-full bg-white/[0.25] text-green-500 duration-200 hover:scale-110 cursor-pointer"
+        className="fixed bottom-14 right-10 z-[9999] rounded-full bg-white/[0.25] text-green-500 duration-200 hover:scale-110 cursor-pointer"
         target="_blank"
         rel="noopener noreferrer"
       >
