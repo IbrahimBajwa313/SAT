@@ -47,7 +47,7 @@ export default function App({ Component, pageProps }) {
 
       <Head>
         <link rel="icon" href="/shab-logo.png" />
-        <title>SAT Relief Activities</title>
+        <title>Shab e Abitalib</title>
       </Head>
 
       <Headroom>
