@@ -8,11 +8,11 @@ export default function TopHeader() {
       <div className="flex items-center space-x-6">
         <div className="flex items-center space-x-1">
           <Mail className="w-4 h-4" />
-          <span>info@sat.org</span>
+          <span>shabeabitalib@gmail.com</span>
         </div>
         <div className="flex items-center space-x-1">
           <Phone className="w-4 h-4" />
-          <span>Contact Us: 0800 44448</span>
+          <span>Contact Us: +923367000304</span>
         </div>
       </div>
 

@@ -8,27 +8,48 @@ export default function Navbar() {
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
-    <div className="bg-white px-6 py-4 flex flex-col md:flex-row justify-between items-center text-black w-full shadow">
-      <div className="flex items-center space-x-3">
-        <Image src="/shab-logo.png" alt="SAT Logo" width={48} height={48} />
-        <span className="font-bold text-lg md:text-xl text-[#004aad]">Save Gaza Campaign</span>
+    <div className="bg-white px-6 py-4 w-full shadow-md border-b border-gray-100">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        {/* Logo and Title */}
+        <div className="flex items-center space-x-3">
+          <Image src="/shab-logo.png" alt="SAT Logo" width={48} height={48} />
+          <span className="font-bold text-xl md:text-2xl text-[#004aad] tracking-wide">
+            Save Gaza Campaign
+          </span>
+        </div>
+
+        {/* Navigation Links */}
+        <nav className="flex flex-wrap justify-center md:justify-end items-center gap-3 text-sm md:text-base font-medium">
+          {[
+            { label: "Appeals", href: "/appeals" },
+            { label: "Islamic Giving", href: "/islamic-giving" },
+            { label: "Our Work", href: "/our-work" },
+            { label: "Take Action", href: "/take-action" },
+            { label: "Media", href: "/media" },
+            { label: "International", href: "/international" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-gray-700 hover:text-[#004aad] transition duration-200 px-2 py-1 rounded hover:bg-gray-100"
+            >
+              {link.label}
+            </Link>
+          ))}
+
+          {/* CTA Buttons */}
+          <Link href={whatsappLink} target="_blank">
+            <button className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 shadow-sm transition duration-200">
+              ❤️ Donate Now
+            </button>
+          </Link>
+          <Link href="/give-zakat">
+            <button className="bg-gray-900 text-white px-4 py-2 rounded-md hover:bg-black shadow-sm transition duration-200">
+                Give Zakat
+            </button>
+          </Link>
+        </nav>
       </div>
-
-      <nav className="flex flex-wrap justify-center md:justify-end gap-4 mt-4 md:mt-0 text-sm md:text-base">
-        <Link href="/appeals" className="hover:text-[#004aad] transition">Appeals</Link>
-        <Link href="/islamic-giving" className="hover:text-[#004aad] transition">Islamic Giving</Link>
-        <Link href="/our-work" className="hover:text-[#004aad] transition">Our Work</Link>
-        <Link href="/take-action" className="hover:text-[#004aad] transition">Take Action</Link>
-        <Link href="/media" className="hover:text-[#004aad] transition">Media</Link>
-        <Link href="/international" className="hover:text-[#004aad] transition">International</Link>
-
-        <Link href={whatsappLink} target="_blank">
-          <button className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700">Donate Now</button>
-        </Link>
-        <Link href="/give-zakat">
-          <button className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900">Give Zakat</button>
-        </Link>
-      </nav>
     </div>
   );
 }
