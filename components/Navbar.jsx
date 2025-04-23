@@ -21,8 +21,8 @@ export default function Navbar() {
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center md:justify-end items-center gap-3 text-sm md:text-base font-medium">
           {[
-            { label: "Appeals", href: "/appeals" },
-            { label: "Islamic Giving", href: "/islamic-giving" },
+            { label: "Home", href: "/" },
+            { label: "About", href: "/about" },
             { label: "Our Work", href: "/our-work" },
             { label: "Take Action", href: "/take-action" },
             { label: "Media", href: "/media" },
