@@ -18,7 +18,7 @@ export default function AboutUs() {
         {/* Text Section */}
         <div className="md:w-1/2 p-6 md:p-14 flex flex-col justify-center">
           <h1 className="text-red-600 text-3xl md:text-5xl font-bold mb-4 md:mb-6 leading-snug md:leading-tight">
-            Who are we <br />
+            Who are we ?<br />
             <span className="text-black">
               Shab e Abi Talib Foundation Pakistan
             </span>

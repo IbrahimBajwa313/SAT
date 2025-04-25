@@ -9,7 +9,7 @@ export default function HelpCounter() {
   const counters = [
     {
       id: 1,
-      endValue: 20000,
+      endValue: 60000,
       label: "Meals Fed",
       duration: "5",
       icon: <FontAwesomeIcon icon={faUtensils} className="size-10 text-[#22C55E]" />,
