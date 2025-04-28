@@ -23,6 +23,13 @@ export default function HelpCounter() {
     },
     {
       id: 3,
+      endValue: 2000000,
+      label: "Cash Distribution",
+      duration: "5",
+      icon: <FontAwesomeIcon icon={faTshirt} className="size-10 text-[#22C55E]" />,
+    },
+    {
+      id: 4,
       endValue: 4500,
       label: "Medically Assisted",
       duration: "5",
