@@ -11,6 +11,7 @@ import About from "../components/About";
 import HeroBanner from "../components/HeroBanner"; 
 import Transparency from "../components/Transparency"; 
 import ProjectsOverview from "../components/ProjectsOverview";
+import DonationWidget from "../components/DonationWidget";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
@@ -23,6 +24,7 @@ export default function Home() {
         <AboutUs />  
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         {/* <About />   */}
+        <DonationWidget   />
         <Transparency />
         <ProjectsOverview />
         
