@@ -1,32 +1,119 @@
 import Link from "next/link";
 import { useState } from "react";
-import {
-  FaHospitalAlt, FaSun, FaSchool, FaFemale, FaShoppingCart,
-  FaUtensils, FaAmbulance, FaTshirt, FaHome, FaUsers, FaMoneyBillWave,
-  FaKaaba, FaGift
-} from "react-icons/fa";
+import ReliefActivitySummary from './ReliefActivitySummary'; // Adjust path based on your project structure
 
 export default function ProjectsOverview() {
   const [activeTab, setActiveTab] = useState("palestine");
 
   const pakistanProjects = [
-    { label: "Medical Camps / Dispensaries", icon: <FaHospitalAlt size={24} className="text-green-700" /> },
-    { label: "Solar-Powered Water Pumps", icon: <FaSun size={24} className="text-yellow-500" /> },
-    { label: "Education (School Project)", icon: <FaSchool size={24} className="text-blue-600" /> },
-    { label: "Women Empowerment", icon: <FaFemale size={24} className="text-pink-500" /> },
-    { label: "Ration Drives", icon: <FaShoppingCart size={24} className="text-gray-700" /> },
+    {
+      label: "Medical Camps / Dispensaries",
+      image: "/projects/medical-camps-dispensaries.jpg",
+      progress: 65,
+      goal: 10000,
+      status: 'active'
+    },
+    {
+      label: "Solar-Powered Water Pumps",
+      image: "/projects/solar-powered-water-pumps.jpg",
+      progress: 80,
+      goal: 8000,
+      status: 'urgent'
+    },
+    {
+      label: "Education (School Project)",
+      image: "/projects/education-school-project.jpg",
+      progress: 90,
+      goal: 12000,
+      status: 'goalReached'
+    },
+    {
+      label: "Women Empowerment",
+      image: "/projects/women-empowerment.jpg",
+      progress: 45,
+      goal: 7000,
+      status: 'active'
+    },
+    {
+      label: "Ration Drives",
+      image: "/projects/ration-drives.jpg",
+      progress: 30,
+      goal: 5000,
+      status: 'closed'
+    },
   ];
 
   const palestineProjects = [
-    { label: "Food & Water Distribution", icon: <FaUtensils size={24} className="text-orange-600" /> },
-    { label: "Medical Assistance", icon: <FaAmbulance size={24} className="text-red-600" /> },
-    { label: "Clothing & Essentials", icon: <FaTshirt size={24} className="text-blue-500" /> },
-    { label: "Shelter & Housing", icon: <FaHome size={24} className="text-gray-600" /> },
-    { label: "Family Support Program", icon: <FaUsers size={24} className="text-purple-600" /> },
-    { label: "Cash Distribution", icon: <FaMoneyBillWave size={24} className="text-green-600" /> },
-    { label: "Ration Drives", icon: <FaShoppingCart size={24} className="text-gray-700" /> },
-    { label: "Qurbani Project", icon: <FaKaaba size={24} className="text-black" /> },
-    { label: "Ramadan Special Project", icon: <FaGift size={24} className="text-yellow-600" /> },
+    {
+      label: "Water Projects",
+      image: "/projects/water-projects.jpg",
+      progress: 55,
+      goal: 100,
+      status: 'active'
+    },
+    {
+      label: "Food Distribution",
+      image: "/projects/food-distribution.jpg",
+      progress: 75,
+      goal: 5000,
+      status: 'active'
+    },
+    {
+      label: "Medical Assistance",
+      image: "/projects/medical-assistance.jpg",
+      progress: 60,
+      goal: 10000,
+      status: 'urgent'
+    },
+    {
+      label: "Clothing & Essentials",
+      image: "/projects/clothing-essentials.jpg",
+      progress: 80,
+      goal: 3000,
+      status: 'goalReached'
+    },
+    {
+      label: "Shelter & Housing",
+      image: "/projects/shelter-housing.jpg",
+      progress: 50,
+      goal: 150,
+      status: 'active'
+    },
+    {
+      label: "Family Support Program",
+      image: "/projects/family-support-program.jpg",
+      progress: 90,
+      goal: 7000,
+      status: 'closed'
+    },
+    {
+      label: "Cash Distribution",
+      image: "/projects/cash-distribution.jpg",
+      progress: 40,
+      goal: 8000,
+      status: 'active'
+    },
+    {
+      label: "Ration Drives",
+      image: "/projects/ration-drives.jpg",
+      progress: 65,
+      goal: 4000,
+      status: 'urgent'
+    },
+    // {
+    //   label: "Qurbani Project",
+    //   image: "/projects/qurbani-project.jpg",
+    //   progress: 85,
+    //   goal: 6000,
+    //   status: 'goalReached'
+    // },
+    {
+      label: "Ramadan Special Project",
+      image: "/projects/ramadan-special-project.jpg",
+      progress: 100,
+      goal: 5000,
+      status: 'closed'
+    },
   ];
 
   return (
@@ -37,30 +124,32 @@ export default function ProjectsOverview() {
         </h2>
         <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
           Inspired by the <span className="font-semibold text-green-700">Shab e Abi Talib</span>,<br />
-          we serve communities in need across <span className="font-bold"> Pakistan</span> and <span className="font-bold"> Palestine</span>.
+          we serve communities in need across <span className="font-bold">Pakistan</span> and <span className="font-bold">Palestine</span>.
         </p>
 
         {/* Tabs (Palestine First) */}
         <div className="flex justify-center gap-4 mb-12 flex-wrap">
           <button
             onClick={() => setActiveTab("palestine")}
-            className={`px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 ${activeTab === "palestine"
-              ? "bg-red-700 text-white shadow-lg"
-              : "bg-white text-red-700 border border-red-700 shadow-sm"
-              }`}
+            className={`px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
+              activeTab === "palestine"
+                ? "bg-red-700 text-white shadow-lg"
+                : "bg-white text-red-700 border border-red-700 shadow-sm"
+            }`}
             aria-label="View Palestine Projects"
           >
-             Palestine
+            Palestine
           </button>
           <button
             onClick={() => setActiveTab("pakistan")}
-            className={`px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 ${activeTab === "pakistan"
-              ? "bg-green-700 text-white shadow-lg"
-              : "bg-white text-green-700 border border-green-700 shadow-sm"
-              }`}
+            className={`px-6 py-3 rounded-full text-lg font-semibold transition-all duration-300 transform hover:scale-105 ${
+              activeTab === "pakistan"
+                ? "bg-green-700 text-white shadow-lg"
+                : "bg-white text-green-700 border border-green-700 shadow-sm"
+            }`}
             aria-label="View Pakistan Projects"
           >
-             Pakistan
+            Pakistan
           </button>
         </div>
 
@@ -73,16 +162,14 @@ export default function ProjectsOverview() {
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {pakistanProjects.map((project, idx) => (
-                  <div
+                  <ReliefActivitySummary
                     key={idx}
-                    className="group bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 flex items-center gap-4 text-gray-800 font-medium shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
-                    aria-label={`Pakistan Project: ${project.label}`}
-                  >
-                    <div className="p-3 rounded-full bg-gray-100 group-hover:bg-gray-200 transition-colors">
-                      {project.icon}
-                    </div>
-                    <span className="text-lg">{project.label} </span>
-                  </div>
+                    activity={project.label}
+                    image={project.image}
+                    progress={project.progress}
+                    goal={project.goal}
+                    initialStatus={project.status}
+                  />
                 ))}
               </div>
             </div>
@@ -90,20 +177,18 @@ export default function ProjectsOverview() {
           {activeTab === "palestine" && (
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold text-red-700 mb-6">
-                 Palestine Projects
+                Palestine Projects
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {palestineProjects.map((project, idx) => (
-                  <div
+                  <ReliefActivitySummary
                     key={idx}
-                    className="group bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 flex items-center gap-4 text-gray-800 font-medium shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
-                    aria-label={`Palestine Project: ${project.label}`}
-                  >
-                    <div className="p-3 rounded-full bg-gray-100 group-hover:bg-gray-200 transition-colors">
-                      {project.icon}
-                    </div>
-                    <span className="text-lg">{project.label} </span>
-                  </div>
+                    activity={project.label}
+                    image={project.image}
+                    progress={project.progress}
+                    goal={project.goal}
+                    initialStatus={project.status}
+                  />
                 ))}
               </div>
             </div>

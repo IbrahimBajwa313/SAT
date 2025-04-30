@@ -1,9 +1,28 @@
 // app/donate/page.jsx or components/GazaDonationHero.jsx
-import React from 'react';
+import Link from "next/link";
+// import { Link } from 'react-router-dom';
+import React from "react";
 
 const GazaDonationHero = () => {
-  const goalAmount = 1000000;
-  const raisedAmount = 154330;
+  const goalAmount = 10000;
+  const today = new Date();
+  const year = today.getFullYear();
+  const month = today.getMonth(); // 0-indexed
+  const dayOfMonth = today.getDate(); // 1 to 31
+
+  // Get total days in this month
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+  // Simulate 95% of goal being raised over the month
+  const targetAmount = goalAmount * 0.95;
+
+  // Daily increment
+  const dailyAmount = targetAmount / daysInMonth;
+
+  // Raised amount so far (simulated)
+  const raisedAmount = Math.round(dailyAmount * dayOfMonth);
+
+  // Calculate progress percentage
   const progressPercentage = Math.min(
     Math.round((raisedAmount / goalAmount) * 100),
     100
@@ -11,9 +30,9 @@ const GazaDonationHero = () => {
 
   return (
     <div className="  flex items-center justify-center  ">
-      <div className="bg-white shadow-2xl rounded-2xl p-10 w-full max-w-3xl border border-gray-200">
-        <h1 className="text-4xl font-bold text-black text-center mb-6">
-          🇵🇸 Help Gaza Families Rebuild
+      <div className="bg-white shadow-2xl rounded-2xl p-16  w-full max-w-full border border-gray-200">
+      <h1 className="text-4xl font-bold text-center text-black mb-4">
+          Support <span className="text-red-600">Gaza</span> – Donate Now
         </h1>
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -35,23 +54,27 @@ const GazaDonationHero = () => {
               {progressPercentage}% funded – every rupee counts
             </p>
             <p className="text-base text-gray-700 mt-4">
-              Your donations provide food, shelter, and medicine to displaced families in Gaza. Join thousands who have already stepped up.
+              Your donations provide food, shelter, and medicine to displaced
+              families in Gaza. Join thousands who have already stepped up.
             </p>
-            <button className="mt-6 w-full md:w-auto bg-green-700 text-white font-bold py-3 px-6 rounded hover:bg-green-800 transition">
-              Donate Now
-            </button>
+
+            <Link href="/DonateNowPage" className="mt-6 w-full md:w-auto">
+              <button className="bg-green-700 text-white font-bold py-3 px-6 rounded hover:bg-green-800 transition">
+                Donate Now
+              </button>
+            </Link>
             <p className="text-xs text-gray-400 mt-2">
               Donation protected by Gaza Relief Trust
             </p>
           </div>
 
           {/* Right Circular Progress */}
-          <div className="relative w-40 h-40">
+          <div className="relative w-80 h-80">
             <svg className="w-full h-full" viewBox="0 0 36 36">
               <path
                 className="text-gray-300"
                 stroke="currentColor"
-                strokeWidth="3.8"
+                strokeWidth="3"
                 fill="none"
                 d="M18 2.0845
                    a 15.9155 15.9155 0 0 1 0 31.831
@@ -68,9 +91,9 @@ const GazaDonationHero = () => {
                    a 15.9155 15.9155 0 0 1 0 -31.831"
               />
               <text
-                x="18"
-                y="20.35"
-                className="text-sm fill-black font-bold"
+                x="18.5"
+                y="22.35"
+                className="text-xs fill-black font-bold"
                 textAnchor="middle"
               >
                 {progressPercentage}%

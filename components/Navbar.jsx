@@ -9,13 +9,15 @@ export default function Navbar() {
   const phoneNumber = "+923367000304";
   const message =
     "AsslamoAlikum! I am contacting you through SAT Site. I want to collaborate in Gaza Relief Activities. Please send the details and the account number.";
-  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
 
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Pak Projects", href: "/our-work" },
-    { label: "Gaza Projects", href: "/take-action" },
+    { label: "Gaza Projects", href: "/GazaProjects" },
+    { label: "Pak Projects", href: "/PakProjects" },
     { label: "Our Martyrs", href: "/media" },
     { label: "Take Action", href: "/international" },
   ];
@@ -42,7 +44,7 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link href={whatsappLink} target="_blank">
+          <Link href="/DonateNowPage">
             <button className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 shadow-sm transition duration-200">
               Donate Now
             </button>
@@ -71,7 +73,11 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link href={whatsappLink} target="_blank" onClick={() => setIsMenuOpen(false)}>
+          <Link
+            href={whatsappLink}
+            target="_blank"
+            onClick={() => setIsMenuOpen(false)}
+          >
             <button className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 shadow-sm transition duration-200 w-full">
               Donate Now
             </button>
