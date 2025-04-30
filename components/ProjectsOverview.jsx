@@ -48,7 +48,7 @@ export default function ProjectsOverview() {
       label: "Water Projects",
       image: "/projects/water-projects.jpg",
       progress: 55,
-      goal: 100,
+      goal: 1000,
       status: 'active'
     },
     {
