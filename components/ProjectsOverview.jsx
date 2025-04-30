@@ -8,28 +8,28 @@ export default function ProjectsOverview() {
   const pakistanProjects = [
     {
       label: "Medical Camps / Dispensaries",
-      image: "/projects/medical-camps-dispensaries.jpg",
+      image: "/projects/water-projects.jpg",
       progress: 65,
       goal: 10000,
       status: 'active'
     },
     {
       label: "Solar-Powered Water Pumps",
-      image: "/projects/solar-powered-water-pumps.jpg",
+      image: "/projects/water-projects.jpg",
       progress: 80,
       goal: 8000,
       status: 'urgent'
     },
     {
       label: "Education (School Project)",
-      image: "/projects/education-school-project.jpg",
+      image: "/projects/water-projects.jpg",
       progress: 90,
       goal: 12000,
       status: 'goalReached'
     },
     {
       label: "Women Empowerment",
-      image: "/projects/women-empowerment.jpg",
+      image: "/projects/water-projects.jpg",
       progress: 45,
       goal: 7000,
       status: 'active'
