@@ -67,7 +67,7 @@ export default function ProjectsOverview() {
     },
     {
       label: "Clothing & Essentials",
-      image: "/public/projects/clothing-essentials.jpg",
+      image: "/projects/clothing-essentials.jpg",
       progress: 80,
       goal: 3000,
       status: 'goalReached'
@@ -99,14 +99,7 @@ export default function ProjectsOverview() {
       progress: 65,
       goal: 4000,
       status: 'urgent'
-    },
-    // {
-    //   label: "Qurbani Project",
-    //   image: "/projects/qurbani-project.jpg",
-    //   progress: 85,
-    //   goal: 6000,
-    //   status: 'goalReached'
-    // },
+    }, 
     {
       label: "Ramadan Special Project",
       image: "/projects/ramadan-special-project.jpg",
