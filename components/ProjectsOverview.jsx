@@ -46,63 +46,63 @@ export default function ProjectsOverview() {
   const palestineProjects = [
     {
       label: "Water Projects",
-      image: "/projects/water-projects.jpg",
+      image: "/water-projects.jpg",
       progress: 55,
       goal: 1000,
       status: 'active'
     },
     {
       label: "Food Distribution",
-      image: "/projects/food-distribution.jpg",
+      image: "/food-distribution.jpg",
       progress: 75,
       goal: 5000,
       status: 'active'
     },
     {
       label: "Medical Assistance",
-      image: "/projects/medical-assistance.jpg",
+      image: "/medical-assistance.jpg",
       progress: 60,
       goal: 10000,
       status: 'urgent'
     },
     {
       label: "Clothing & Essentials",
-      image: "/projects/clothing-essentials.jpg",
+      image: "/clothing-essentials.jpg",
       progress: 80,
       goal: 3000,
       status: 'goalReached'
     },
     {
       label: "Shelter & Housing",
-      image: "/projects/shelter-housing.jpg",
+      image: "/shelter-housing.jpg",
       progress: 50,
       goal: 150,
       status: 'active'
     },
     {
       label: "Family Support Program",
-      image: "/projects/family-support-program.jpg",
+      image: "/family-support-program.jpg",
       progress: 90,
       goal: 7000,
       status: 'closed'
     },
     {
       label: "Cash Distribution",
-      image: "/projects/Cash.jpg",
+      image: "/Cash.jpg",
       progress: 40,
       goal: 8000,
       status: 'active'
     },
     {
       label: "Ration Drives",
-      image: "/projects/ration-drives.jpg",
+      image: "/ration-drives.jpg",
       progress: 65,
       goal: 4000,
       status: 'urgent'
     }, 
     {
       label: "Ramadan Special Project",
-      image: "/projects/ramadan-special-project.jpg",
+      image: "/ramadan-special-project.jpg",
       progress: 100,
       goal: 5000,
       status: 'closed'
