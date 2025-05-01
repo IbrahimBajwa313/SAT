@@ -67,7 +67,7 @@ export default function ProjectsOverview() {
     },
     {
       label: "Clothing & Essentials",
-      image: "/projects/clothing-essentials.jpg",
+      image: "/public/projects/clothing-essentials.jpg",
       progress: 80,
       goal: 3000,
       status: 'goalReached'
