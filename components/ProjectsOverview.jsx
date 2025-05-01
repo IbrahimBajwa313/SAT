@@ -88,7 +88,7 @@ export default function ProjectsOverview() {
     },
     {
       label: "Cash Distribution",
-      image: "/projects/cash-distribution.jpg",
+      image: "/projects/Cash.jpg",
       progress: 40,
       goal: 8000,
       status: 'active'
