@@ -18,7 +18,7 @@ export default function Navbar() {
     { label: "About", href: "/about" },
     { label: "Gaza Projects", href: "/GazaProjects" },
     { label: "Pak Projects", href: "/PakProjects" },
-    { label: "Our Martyrs", href: "/media" },
+    { label: "Our Martyrs", href: "/martyrs" },
     { label: "Take Action", href: "/international" },
   ];
 
