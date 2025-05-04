@@ -1,13 +1,9 @@
-// app/martyrs/page.tsx
-import Wrapper from "../components/Wrapper";
+// components/martyrs/RomanShaheed.tsx
 import Image from "next/image";
 
-export default function MartyrsPage() {
+export default function RomanShaheed() {
   return (
-    <main className="py-4">
-      <Wrapper>
-
-      
+    <section className="py-10">
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-8">
@@ -56,7 +52,6 @@ export default function MartyrsPage() {
           </div>
         </div>
       </div>
-      </Wrapper>
-    </main>
+    </section>
   );
 }
