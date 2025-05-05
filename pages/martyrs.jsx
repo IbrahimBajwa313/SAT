@@ -17,7 +17,7 @@ export default function MartyrsPage() {
           <p className="text-gray-700 mt-4 text-base lg:text-lg max-w-3xl mx-auto">
             A tribute to the courage and sacrifice of{" "}
             <strong className="text-red-500">Muhammad Roman Sajid</strong>, whose
-            ultimate sacrifice fueled our mission for justice and peace.
+            ultimate sacrifice fueled our mission for justice and peace for Palestinians.
           </p>
         </div>
 
