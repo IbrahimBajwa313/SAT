@@ -9,40 +9,78 @@ const HeroBanner = () => {
             <Carousel autoPlay={true} infiniteLoop={true} showStatus={false} showThumbs={false}>
                 <div>
                     <Image 
-                        src="/gazaneeds.jpg" 
+                        src="/hero/h1.jpg" 
                         alt="Slide 1" 
                         width={1360} 
                         height={500} 
                         style={{ width: "100%", height: "auto" }} // Ensures responsive behavior
-                    />
-                    {/* <div className="px-[15px] md:px-[40px] py-[10px] md:py-[25px] font-oswald bg-white absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.5] text-[15px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
-                        Shop now
-                    </div> */}
+                    /> 
                 </div>
                 <div>
                     <Image 
-                        src="/gazaneeds.jpg" 
+                        src="/hero/h2.jpg" 
                         alt="Slide 2" 
                         width={1360} 
                         height={500} 
                         style={{ width: "100%", height: "auto" }} // Ensures responsive behavior
-                    />
-                    {/* <div className="px-[15px] md:px-[40px] py-[10px] md:py-[25px] font-oswald bg-white absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.9] text-[15px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
-                        Shop now
-                    </div> */}
+                    /> 
                 </div>
                 <div>
                     <Image 
-                        src="/gazaneeds.jpg" 
+                        src="/hero/h3.jpg" 
                         alt="Slide 3" 
                         width={1360} 
                         height={500} 
                         style={{ width: "100%", height: "auto" }} // Ensures responsive behavior
-                    />
-                    {/* <div className="px-[15px] md:px-[40px] py-[10px] md:py-[25px] font-oswald bg-white absolute bottom-[25px] md:bottom-[75px] left-0 text-black/[0.5] text-[15px] md:text-[30px] uppercase font-medium cursor-pointer hover:opacity-90">
-                        Shop now
-                    </div> */}
+                    /> 
                 </div>
+                <div>
+                    <Image 
+                        src="/hero/h4.jpg" 
+                        alt="Slide 4" 
+                        width={1360} 
+                        height={500} 
+                        style={{ width: "100%", height: "auto" }} // Ensures responsive behavior
+                    /> 
+                </div>
+                <div>
+                    <Image 
+                        src="/hero/h5.jpg" 
+                        alt="Slide 5" 
+                        width={1360} 
+                        height={500} 
+                        style={{ width: "100%", height: "auto" }} // Ensures responsive behavior
+                    /> 
+                </div>
+                <div>
+                    <Image 
+                        src="/hero/h6.jpg" 
+                        alt="Slide 6" 
+                        width={1360} 
+                        height={500} 
+                        style={{ width: "100%", height: "auto" }} // Ensures responsive behavior
+                    /> 
+                </div>
+                <div>
+                    <Image 
+                        src="/hero/h7.jpg" 
+                        alt="Slide 7" 
+                        width={1360} 
+                        height={500} 
+                        style={{ width: "100%", height: "auto" }} // Ensures responsive behavior
+                    /> 
+                </div>
+                <div>
+                    <Image 
+                        src="/hero/h8.jpg" 
+                        alt="Slide 8" 
+                        width={1360} 
+                        height={500} 
+                        style={{ width: "100%", height: "auto" }} // Ensures responsive behavior
+                    /> 
+                </div>
+                
+                 
             </Carousel>
         </div>
     );
