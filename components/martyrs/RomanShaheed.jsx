@@ -34,7 +34,7 @@ export default function RomanShaheed() {
           {/* Description */}
           <div className="p-6 md:p-8 flex flex-col justify-center md:w-2/3 text-center md:text-left">
             <h3 className="font-bold text-xl lg:text-2xl mb-4 text-green-600">
-              Muhammad Roman Sajid
+              Muhammad Roman Sajid Shaheed
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4 text-sm lg:text-base">
               Muhammad Roman Sajid was a brave soul who stood for the cause with
