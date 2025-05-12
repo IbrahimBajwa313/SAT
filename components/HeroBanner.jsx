@@ -18,7 +18,7 @@ const HeroBanner = () => {
                 stopOnHover={false}
             >
                 {Array.from({ length: 8 }, (_, i) => (
-                    <div key={i} className="relative w-full h-[60vh] lg:h-screen">
+                    <div key={i} className="relative w-full h-[250px] lg:w-full lg:h-[85vh]">
                         <Image
                             src={`/hero/h${i + 1}.jpg`}
                             alt={`Slide ${i + 1}`}

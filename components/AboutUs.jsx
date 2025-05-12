@@ -4,16 +4,7 @@ export default function AboutUs() {
   return (
     <div className="bg-blue-50 min-h-screen flex justify-center items-center p-6 md:p-10">
       <div className="bg-white shadow-2xl rounded-3xl overflow-hidden max-w-7xl w-full flex flex-col md:flex-row">
-        {/* Image Section */}
-        <div className="md:w-1/2">
-          <Image
-            src="/waterProjectImg.jpg" // Replace with actual image path
-            alt="Shab e Abotalib Foundation"
-            width={800}
-            height={800}
-            className="w-full h-full object-cover"
-          />
-        </div>
+        
 
         {/* Text Section */}
         <div className="md:w-1/2 p-6 md:p-14 flex flex-col justify-center">
@@ -39,6 +30,18 @@ export default function AboutUs() {
             <span className="text-gray-600">- Prophet Muhammad (PBUH)</span>
           </blockquote>
         </div>
+
+        {/* Image Section */}
+        <div className="md:w-1/2">
+          <Image
+            src="/waterProjectImg.jpg" // Replace with actual image path
+            alt="Shab e Abotalib Foundation"
+            width={800}
+            height={800}
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
       </div>
     </div>
   );

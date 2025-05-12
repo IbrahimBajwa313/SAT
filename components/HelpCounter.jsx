@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import Heading from "@/components/Heading";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 import { faUtensils, faTshirt, faMedkit } from "@fortawesome/free-solid-svg-icons";
 
 export default function HelpCounter() {
@@ -26,7 +27,8 @@ export default function HelpCounter() {
       endValue: 2000000,
       label: "Cash Distribution",
       duration: "5",
-      icon: <FontAwesomeIcon icon={faTshirt} className="size-10 text-[#22C55E]" />,
+      icon: <FontAwesomeIcon icon={faDollarSign} className="size-10 text-[#22C55E]" />,
+
     },
     {
       id: 4,
@@ -46,7 +48,7 @@ export default function HelpCounter() {
     return (
       <div
         ref={ref}
-        className="flex flex-col gap-4 justify-center items-center text-black rounded-2xl shadow-md p-6 sm:p-8 bg-white transition-transform transform hover:scale-105 w-full sm:w-[260px] md:w-[280px]"
+        className="flex flex-col  gap-4 justify-center items-center text-black rounded-2xl shadow-md p-6 sm:p-8 bg-white transition-transform transform hover:scale-105 w-full sm:w-[260px] md:w-[280px]"
       >
         {counter.icon}
         <div className="text-center">
@@ -73,7 +75,7 @@ export default function HelpCounter() {
         className="text-black text-center text-3xl sm:text-4xl md:text-5xl font-bold mb-8"
         text="Our Efforts"
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
         {counters.map((counter) => (
           <CounterBox key={counter.id} counter={counter} />
         ))}
