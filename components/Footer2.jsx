@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-[#111] text-white py-12">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-10 pb-12 border-b border-gray-700 px-4 lg:px-12">
         {/* Contact Info */}
-        <div className="flex items-start">
+        {/* <div className="flex items-start">
           <i className="fa-solid fa-location-dot text-2xl lg:text-3xl text-[#206e3d] mr-4"></i>
           <div>
             <Link
@@ -22,7 +22,7 @@ const Footer = () => {
               </p>
             </Link>
           </div>
-        </div>
+        </div> */}
         <div className="flex items-start">
           <i className="fa-solid fa-phone text-2xl lg:text-3xl text-[#2b9150] mr-4"></i>
           <div>
@@ -58,7 +58,7 @@ const Footer = () => {
             >
               <i className="fab fa-facebook"></i>
             </Link>
-            <Link
+            {/* <Link
               href="https://www.youtube.com/@savegazacampaign"
               className="text-2xl lg:text-3xl text-gray-400 hover:text-red-500 transition-colors duration-200 ease-in-out"
             >
@@ -69,21 +69,21 @@ const Footer = () => {
               className="text-2xl lg:text-3xl text-gray-400 hover:text-blue-400 transition-colors duration-200 ease-in-out"
             >
               <i className="fab fa-twitter ml-4 lg:ml-8"></i>
-            </Link>
+            </Link> */}
             <Link
               href="https://www.instagram.com/savegazacampaign"
               className="text-2xl lg:text-3xl text-gray-400 hover:text-pink-700 transition-colors duration-200 ease-in-out"
             >
               <i className="fa-brands fa-instagram ml-4 lg:ml-8"></i>
             </Link>
-            <Link
+            {/* <Link
               href="https://www.linkedin.com/company/save-gaza-campaign?originalSubdomain=pk"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl lg:text-3xl text-gray-400 hover:text-blue-700 transition-colors duration-200 ease-in-out"
             >
               <i className="fa-brands fa-linkedin ml-4 lg:ml-8"></i>
-            </Link>
+            </Link> */}
           </div>
         </div>
 
