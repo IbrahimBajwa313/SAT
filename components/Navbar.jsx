@@ -29,7 +29,7 @@ export default function Navbar() {
         <div className="flex items-center space-x-3">
           <Image src="/shab-logo.png" alt="SAT Logo" width={48} height={48} />
           <span className="font-bold text-xl md:text-2xl text-[#004aad] tracking-wide">
-            Shab e Abitalib
+            Shab Abitalib
           </span>
         </div>
 
@@ -74,9 +74,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link
-            href={whatsappLink}
-            target="_blank"
-            onClick={() => setIsMenuOpen(false)}
+            href="/DonateNowPage"
           >
             <button className="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 shadow-sm transition duration-200 w-full">
               Donate Now
