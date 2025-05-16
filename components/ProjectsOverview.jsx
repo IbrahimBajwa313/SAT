@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
-import ReliefActivitySummary from "./ReliefActivitySummary"; // Adjust path based on your project structure
+import ReliefActivitySummary from "./ReliefActivitySummary"; // Adjust path accordingly
 
 export default function ProjectsOverview() {
   const [activeTab, setActiveTab] = useState("palestine");
@@ -109,22 +109,28 @@ export default function ProjectsOverview() {
     },
   ];
 
+  const learnMoreLink = activeTab === "palestine" ? "/GazaProjects" : "/PakProjects";
+  const learnMoreLabel =
+    activeTab === "palestine"
+      ? "Details of Palestine Projects"
+      : "Details of Pakistan Projects";
+
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-blue-50">
+    <section className="py-12 px-2 sm:px-6 lg:px-8 bg-blue-50">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">
           Our Ongoing Efforts
         </h2>
         <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-12 leading-relaxed">
           Inspired by the{" "}
-          <span className="font-semibold text-green-700">Shab e Abi Talib</span>
-          ,<br />
+          <span className="font-semibold text-green-700">Shab e Abi Talib</span>,
+          <br />
           we serve communities in need across{" "}
           <span className="font-bold">Pakistan</span> and{" "}
           <span className="font-bold">Palestine</span>.
         </p>
 
-        {/* Tabs (Palestine First) */}
+        {/* Tabs */}
         <div className="flex justify-center gap-4 mb-12 flex-wrap">
           <button
             onClick={() => setActiveTab("palestine")}
@@ -133,7 +139,6 @@ export default function ProjectsOverview() {
                 ? "bg-red-700 text-white shadow-lg"
                 : "bg-white text-red-700 border border-red-700 shadow-sm"
             }`}
-            aria-label="View Palestine Projects"
           >
             Palestine
           </button>
@@ -144,13 +149,12 @@ export default function ProjectsOverview() {
                 ? "bg-green-700 text-white shadow-lg"
                 : "bg-white text-green-700 border border-green-700 shadow-sm"
             }`}
-            aria-label="View Pakistan Projects"
           >
             Pakistan
           </button>
         </div>
 
-        {/* Project Grids */}
+        {/* Projects */}
         <div className="overflow-hidden">
           {activeTab === "pakistan" && (
             <div>
@@ -166,17 +170,19 @@ export default function ProjectsOverview() {
                     progress={project.progress}
                     goal={project.goal}
                     initialStatus={project.status}
+                    imageHeight="h-60"  
                   />
                 ))}
               </div>
             </div>
           )}
+
           {activeTab === "palestine" && (
             <div>
               <h3 className="text-2xl sm:text-3xl font-bold text-red-700 mb-6">
                 Palestine Projects
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {palestineProjects.map((project, idx) => (
                   <ReliefActivitySummary
                     key={idx}
@@ -185,6 +191,7 @@ export default function ProjectsOverview() {
                     progress={project.progress}
                     goal={project.goal}
                     initialStatus={project.status}
+                    imageHeight="h-60" 
                   />
                 ))}
               </div>
@@ -194,15 +201,15 @@ export default function ProjectsOverview() {
 
         {/* CTA Button */}
         <div className="mt-12">
-          <Link href="/GazaProjects ">
+          <Link href={learnMoreLink}>
             <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-green-600 to-green-800 text-white text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 animate-pulse-subtle">
-              Learn More →
+              {learnMoreLabel} →
             </button>
           </Link>
         </div>
       </div>
 
-      {/* Subtle Pulse Animation */}
+      {/* Animation */}
       <style jsx>{`
         @keyframes subtlePulse {
           0%,
