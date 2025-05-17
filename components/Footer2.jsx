@@ -18,14 +18,24 @@ const Footer = () => {
             <i className="fa-solid fa-envelope text-xl text-[#2b9150] mr-3"></i>
             <span className="text-gray-400">shabeabitalib@gmail.com</span>
           </div>
-          <div className="flex items-start">
+          <div className="flex items-start mb-4">
             <i className="fa-brands fa-whatsapp text-xl text-[#2b9150] mr-3"></i>
             <Link
-              href="https://wa.me/923074583567"
+              href="https://wa.me/923367000304"
               target="_blank"
               className="text-gray-400 hover:text-white transition"
             >
-              Chat with Developer
+              Chat with us on WhatsApp
+            </Link>
+          </div>
+          <div className="flex items-center">
+              <i className="fa-brands fa-whatsapp text-xl text-[#2b9150] mr-3"></i>
+            <Link
+              href="https://whatsapp.com/channel/0029Vai1YNrCcW4qqp6jLU1D"
+              target="_blank"
+              className="text-gray-400 hover:text-white transition"
+            >
+              Join our WhatsApp Channel
             </Link>
           </div>
         </div>
@@ -44,6 +54,9 @@ const Footer = () => {
             <Link href="https://www.instagram.com/shabe_abi_talib_foundation/?hl=en" target="_blank" className="text-2xl text-gray-400 hover:text-pink-600 transition">
               <i className="fab fa-instagram"></i>
             </Link>
+            <Link href="https://whatsapp.com/channel/0029Vai1YNrCcW4qqp6jLU1D" target="_blank" className="text-2xl text-gray-400 hover:text-pink-600 transition">
+               <i className="fa-brands fa-whatsapp  "></i>
+            </Link>
           </div>
         </div>
 
@@ -56,26 +69,26 @@ const Footer = () => {
             <li><Link href="/donate" className="hover:text-white">Donate Now</Link></li>
             <li><Link href="/GazaProjects" className="hover:text-white">Gaza Projects</Link></li>
             <li><Link href="/PakProjects" className="hover:text-white">Pakistan Projects</Link></li>
-            <li><Link href="/martyrs" className="hover:text-white">Our Martyrs</Link></li> 
+            <li><Link href="/martyrs" className="hover:text-white">Our Martyrs</Link></li>
           </ul>
         </div>
 
-        {/* Subscribe */}
-        <div>
-          <h3 className="text-[#2b9150] font-bold text-lg mb-4">Subscribe</h3>
-          <p className="text-gray-400 mb-4">Don’t miss our latest updates. Subscribe below:</p>
-          <form className="flex flex-col sm:flex-row">
-            <input
-              type="email"
-              placeholder="Email Address"
-              className="w-full p-2 rounded-t sm:rounded-l sm:rounded-t-none bg-gray-700 text-white focus:outline-none"
-            />
-            <button className="bg-[#2b9150] p-2 rounded-b sm:rounded-r sm:rounded-b-none hover:bg-[#650108] transition">
-              <i className="fa fa-paper-plane"></i>
-            </button>
-          </form>
-        </div>
-      </div>
+          {/* Subscribe */} 
+        <div> 
+          <h3 className="text-[#2b9150] font-bold text-lg mb-4">Subscribe</h3> 
+          <p className="text-gray-400 mb-4">Don’t miss our latest updates. Subscribe below:</p> 
+          <form className="flex flex-col sm:flex-row"> 
+            <input 
+              type="email" 
+              placeholder="Email Address" 
+              className="w-full p-2 rounded-t sm:rounded-l sm:rounded-t-none bg-gray-700 text-white focus:outline-none" 
+            /> 
+            <button className="bg-[#2b9150] p-2 rounded-b sm:rounded-r sm:rounded-b-none hover:bg-[#650108] transition"> 
+              <i className="fa fa-paper-plane"></i> 
+            </button> 
+          </form> 
+        </div> 
+      </div>  
 
       {/* Bottom Bar */}
       <div className="text-center text-gray-400 py-6 text-sm px-6">
