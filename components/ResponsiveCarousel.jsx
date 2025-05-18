@@ -10,7 +10,7 @@ const ResponsiveCarousel = ({ images }) => {
         infiniteLoop
         showThumbs={false}
         showStatus={false}
-        interval={2000}
+        interval={3000}
         className="rounded-xl shadow-md"
       >
         {images.map((img, i) => (
