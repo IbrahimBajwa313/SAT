@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className="flex items-start mb-4">
             <i className="fa-solid fa-envelope text-xl text-[#2b9150] mr-3"></i>
-            <span className="text-gray-400">shabeabitalib@gmail.com</span>
+            <span className="text-gray-400">shababitalib@gmail.com</span>
           </div>
           <div className="flex items-start mb-4">
             <i className="fa-brands fa-whatsapp text-xl text-[#2b9150] mr-3"></i>
