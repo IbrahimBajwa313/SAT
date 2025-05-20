@@ -24,7 +24,7 @@ export default function Home() {
         <AboutUs />  
       <Wrapper className="bg-blue-50 pt-20 poppins-medium flex flex-col gap-20">
         {/* <About />   */}
-        {/* <Transparency /> */}
+        <Transparency />
         <ProjectsOverview /> 
         <DonationWidget   />
       </Wrapper>
