@@ -15,7 +15,7 @@ export default async function handler(req, res) {
 
   const mailOptions = {
     from: `"Shab e Abi Talib Website" <${process.env.EMAIL_USERNAME}>`,
-    to: "", // replace with Dr. Usama’s real email
+    to: process.env.EMAIL_USERNAME, // replace with Dr. Usama’s real email
     subject: "New Join Us Form Submission",
     text: `
         A new member has requested to join:
