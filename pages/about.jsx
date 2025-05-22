@@ -1,4 +1,3 @@
-
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -8,7 +7,7 @@ export default function AboutUs() {
     <section className="bg-blue-50 py-12 px-6 md:px-20">
       <main className="container mx-auto px-4 py-8 space-y-10">
         <div className="bg-white p-4 md:p-6 rounded-3xl shadow-md">
-          <h2 className="font-extrabold text-center text-xl sm:text-2xl lg:text-3xl mb-4">
+          <h2 className="font-extrabold text-gray-700 text-center text-xl sm:text-2xl lg:text-3xl mb-4">
             About Us
           </h2>
           <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
@@ -98,13 +97,18 @@ export default function AboutUs() {
                 Our Mission
               </h3>
               <p className="text-sm sm:text-base mb-3">
-              Our name is not just symbolic — it is our foundation. We reflect the resilience, unity, and faith of those who endured one of the toughest trials in Islamic history. We don’t wait for comfort to serve; we serve in discomfort. We don’t speak from behind desks; we walk the streets with the people.
+                Our name is not just symbolic — it is our foundation. We reflect
+                the resilience, unity, and faith of those who endured one of the
+                toughest trials in Islamic history. We don’t wait for comfort to
+                serve; we serve in discomfort. We don’t speak from behind desks;
+                we walk the streets with the people.
               </p>
               <h3 className="font-extrabold text-lg sm:text-xl mb-3 text-[#22C55E]">
                 Our Vision
               </h3>
               <p className="text-sm sm:text-base mb-3">
-              To revive the spirit of collective responsibility in the Ummah by serving humanity beyond borders.
+                To revive the spirit of collective responsibility in the Ummah
+                by serving humanity beyond borders.
               </p>
             </div>
           </div>
