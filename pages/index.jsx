@@ -27,6 +27,7 @@ export default function Home() {
         {/* <About />   */}
         <Transparency />
         <ProjectsOverview />
+      <TransparencySection />
         <DonationWidget />
       </Wrapper>
       <HelpCounter />

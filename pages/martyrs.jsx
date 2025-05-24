@@ -1,4 +1,5 @@
 // app/martyrs/page.tsx
+import Alaa from "@/components/Alaa";
 import Wrapper from "../components/Wrapper";
 import Image from "next/image";
 
@@ -14,6 +15,7 @@ export default function MartyrsPage() {
   ];
   return (
     <main className="py-4 bg-white">
+      <Alaa />
       <Wrapper>
         <div className="container mx-auto px-6">
           {/* Heading */}

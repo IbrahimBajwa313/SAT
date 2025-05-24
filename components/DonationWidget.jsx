@@ -30,8 +30,8 @@ const GazaDonationHero = () => {
 
   return (
     <div className="  flex items-center justify-center  ">
-      <div className="bg-white shadow-2xl rounded-2xl p-16  w-full max-w-full border border-gray-200">
-      <h1 className="text-4xl font-bold text-center text-black mb-4">
+      <div className="bg-white shadow-lg rounded-2xl p-16  w-full max-w-full border border-gray-200">
+        <h1 className="text-4xl font-bold text-center text-black mb-4">
           Support <span className="text-red-600">Gaza</span> – Donate Now
         </h1>
 
