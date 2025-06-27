@@ -15,11 +15,15 @@ const ResponsiveCarousel = ({ images }) => {
         className="rounded-xl shadow-md"
       >
         {images.map((img, i) => (
-          <div key={i}>
+          <div
+            key={i}
+            className="relative h-48 sm:h-72 lg:h-96 w-full rounded-xl overflow-hidden"
+          >
             <Image
               src={img}
               alt={`Slide ${i + 1}`}
-              className="h-48 w-full rounded-xl object-cover shadow-lg sm:h-72 lg:h-96"
+              fill
+              className="object-cover"
             />
           </div>
         ))}
