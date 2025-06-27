@@ -22,10 +22,10 @@ const GazaProjects = () => {
       description:
         "We provide freshly cooked hot meals daily to families in Gaza affected by war and displacement. Each meal is prepared with care to ensure nutrition and dignity for those who've lost access to basic needs. It's a small act of love to ease their unimaginable hardship.",
       images: [
-        "carousels/foodDistribution/1.jpg",
-        "carousels/foodDistribution/2.jpg",
-        "carousels/foodDistribution/3.jpg",
-        "carousels/foodDistribution/4.jpg",
+        "carousels/foodDistribution/1.webp",
+        "carousels/foodDistribution/2.webp",
+        "carousels/foodDistribution/3.webp",
+        "carousels/foodDistribution/4.webp",
       ],
       progress: 75,
       goal: 5000,
@@ -36,10 +36,10 @@ const GazaProjects = () => {
       description:
         "Gaza fasted under bombs, with little to break their fast. We provided iftars, suhoors, and Eid gifts amid destruction. Our efforts brought warmth, faith, and smiles to shattered homes. Despite war, they felt the blessings of Ramadan. With your help, we turned pain into prayer.",
       images: [
-        "carousels/ramadanSpecialProject/1.jpg",
-        "carousels/ramadanSpecialProject/2.jpg",
-        "carousels/ramadanSpecialProject/3.jpg",
-        "carousels/ramadanSpecialProject/4.jpg",
+        "carousels/ramadanSpecialProject/1.webp",
+        "carousels/ramadanSpecialProject/2.webp",
+        "carousels/ramadanSpecialProject/3.webp",
+        "carousels/ramadanSpecialProject/4.webp",
       ],
       progress: 100,
       goal: 5000,
@@ -50,10 +50,10 @@ const GazaProjects = () => {
       description:
         "Gaza's hospitals are overwhelmed, with many destroyed in airstrikes. Injured civilians and children urgently need medical care and supplies. We provide treatment, mobile clinics, and essential medicines. Our support is often the only lifeline for the wounded. Your help keeps Gaza's medical relief running amid chaos",
       images: [
-        "carousels/medicalAssistance/1.jpg",
-        "carousels/medicalAssistance/2.jpg",
-        "carousels/medicalAssistance/3.jpg",
-        "carousels/medicalAssistance/4.jpg",
+        "carousels/medicalAssistance/1.webp",
+        "carousels/medicalAssistance/2.webp",
+        "carousels/medicalAssistance/3.webp",
+        "carousels/medicalAssistance/4.webp",
       ],
       progress: 60,
       goal: 10000,
@@ -65,10 +65,10 @@ const GazaProjects = () => {
       description:
         "Bombings have left families with nothing but what they wore while fleeing. We provide seasonal clothes, hygiene kits, and basic necessities. These items protect against harsh weather and poor sanitation. Each kit restores dignity and comfort to the displaced. In war, even a bar of soap can mean the world.",
       images: [
-        "carousels/clothing/1.jpg",
-        "carousels/clothing/2.jpg",
-        "carousels/clothing/3.jpg",
-        "carousels/clothing/4.jpg",
+        "carousels/clothing/1.webp",
+        "carousels/clothing/2.webp",
+        "carousels/clothing/3.webp",
+        "carousels/clothing/4.webp",
       ],
       progress: 80,
       goal: 3000,
@@ -107,10 +107,10 @@ const GazaProjects = () => {
       description:
         "Amid Gaza's destroyed economy, cash aid is urgently needed. Families can’t access banks or buy essentials without help. We provide direct financial support for rent, food, or meds. Cash gives war victims control over their urgent needs. Your donation becomes their chance at survival.",
       images: [
-        "carousels/cashDistribution/1.jpg",
-        "carousels/cashDistribution/2.jpg",
-        "carousels/cashDistribution/3.jpg",
-        "carousels/cashDistribution/4.jpg",
+        "carousels/cashDistribution/1.webp",
+        "carousels/cashDistribution/2.webp",
+        "carousels/cashDistribution/3.webp",
+        "carousels/cashDistribution/4.webp",
       ],
       progress: 40,
       goal: 8000,
