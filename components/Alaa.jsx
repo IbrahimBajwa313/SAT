@@ -51,7 +51,7 @@ const Alaa = () => {
               Alaa was one of earliest Volunteers of Shab e Abi Talib from Gaza.
               She lost her husband, three children, home, and all means of
               survival during the war. Yet she chose service over sorrow:
-              feeding hungry children, teaching Qur'an in a tent, and holding
+              feeding hungry children, teaching Qur&apos;an in a tent, and holding
               firm to her faith. Her last message was: “Pray for us. Dr
               Muhammad” Shortly after, Alaa was martyred—joining her family in
               Jannah, leaving behind a legacy of strength greater than any army.
@@ -62,11 +62,11 @@ const Alaa = () => {
         {/* Alaa's quote */}
         <div className="flex flex-col items-center bg-white p-6 md:p-8 gap-4 shadow-2xl rounded-3xl overflow-hidden">
           <blockquote className="text-gray-600 italic font-bold text-lg lg:text-xl">
-            I didn't weep that my children were martyred— I wept because they
+            I didn&apos;t weep that my children were martyred— I wept because they
             died hungry.
           </blockquote>
           <p className="text-sm lg:text-base text-gray-700">
-            -Alaa, a widow & mother of martyrs, after her own children's
+            -Alaa, a widow & mother of martyrs, after her own children&apos;s
             martyrdom in Gaza
           </p>
         </div>
@@ -83,7 +83,7 @@ const Alaa = () => {
             </u>
           </h2>
           <p className="text-gray-700 mt-4 text-base text-left lg:text-lg max-w-3xl mx-auto">
-            Alaa's story is not alone. It is one of many. Dozens of our
+            Alaa&apos;s story is not alone. It is one of many. Dozens of our
             volunteers and their families in Gaza continue to live, serve, and
             often die under fire—silent heroes whose sacrifices deserve to be
             remembered and honoured. May Allah accept their martyrdom and grant
@@ -92,7 +92,7 @@ const Alaa = () => {
           </p>
           <p className="text-gray-700 text-base text-left lg:text-lg max-w-3xl mx-auto font-bold">
             Help us carry forward their legacy. Support their families. Let no
-            child go hungry. Let no martyr's story go untold. Join Us Now.
+            child go hungry. Let no martyr&apos;s story go untold. Join Us Now.
           </p>
           <div className="mt-6 flex justify-center">
             <Link href={whatsappLink} legacyBehavior>

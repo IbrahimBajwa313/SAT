@@ -13,9 +13,9 @@ export default function Transparency() {
   return (
     <section className="py-16 bg-blue-50">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6">100% Donation Transparency</h2>
+        <h2 className="text-4xl font-bold text-gray-800 mb-6">How your donations are sent in Gaza</h2>
         <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
-          Every donation you make reaches Gaza directly via Binance, ensuring immediate support for food, medical aid,
+          Every donation you make reaches Gaza directly via digital currency, ensuring immediate support for food, medical aid,
           shelter, and more. Your contributions bring hope to those in need.
         </p>
 
@@ -59,7 +59,7 @@ export default function Transparency() {
           </div>
 
           <p className="text-sm text-gray-500 mt-6 text-center max-w-xl mx-auto">
-            * Your donations are directly transferred and utilized transparently.
+            Your donations are directly transferred and utilized transparently.
           </p>
         </div>
       </div>
