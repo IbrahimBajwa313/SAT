@@ -10,10 +10,10 @@ const TransparencySection = () => {
         </h2>
         <p className="text-lg text-gray-700 leading-relaxed">
           Every 99 PKR out of 100 directly helps those in need, while only 1% is
-          used for technical work. As it's a{" "}
+          used for technical work. As it&apos;s a{" "}
           <strong>100% Volunteer-Run Organization</strong>{" "}
           <span className="font-semibold">Alhamdulilah</span>,<br />
-          we don't pay salaries — we serve.
+          we don&apos;t pay salaries — we serve.
         </p>
       </div>
 
