@@ -1,192 +1,96 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
 const AlaaStoryComponents = () => {
   const components = [
     {
+      title: "A Hero's Widow",
       media: "/martyrs/1.jpg",
+      type: "image",
       text: "Months after the world saw a Palestinian Man martyred in sajdah, a message reached us. His widow, Alaa, living in extreme poverty in Khan Yunis, had no food, no home, and three children to feed. Our local volunteers verified her identity and story—she was indeed the wife of the hero the world had mourned.",
     },
     {
+      title: "Children Lost to Hunger",
       media: "/martyrs/2.jpg",
-      text: `One day, while Alaa, her daughter, and her mother-in-law went to the market, an airstrike hit their shelter — a UN school where they were taking refuge. Her two little sons, left behind waiting for food, were martyred in that moment. Her voice cracked with grief as she shared this pic with us saying: “I didn't weep that my children were martyred — I wept because they died hungry.”`,
+      type: "image",
+      text: `One day, while Alaa, her daughter, and her mother-in-law went to the market, an airstrike hit their shelter — a UN school where they were taking refuge. Her two little sons, left behind waiting for food, were martyred. Her voice cracked with grief as she shared: “I didn’t weep that my children were martyred — I wept because they died hungry.”`,
     },
     {
+      title: "Feeding with Love",
       media: "/martyrs/3.mp4",
-      text: "Our other volunteers, Yasmeen and Ahmed, rushed to support Alaa. A tent was set up, and with donations from our supporters, she was helped to start a small market stall. Yet, Alaa's heart wouldn't let a hungry child go empty-handed—often giving food away for free until the supplies were gone. Even She used to make pizzas for the displaced kids there.",
+      type: "video",
+      text: "Our other volunteers, Yasmeen and Ahmed, rushed to support Alaa. A tent was set up, and with donations from our supporters, she was helped to start a small market stall. Alaa's heart wouldn’t let a hungry child go empty-handed—often giving food away until it was gone. She even made pizzas for the displaced children.",
     },
     {
+      title: "Teaching in the Rubble",
       media: "/martyrs/4.jpg",
-      text: "Despite her losses, Alaa remained a beacon of strength. As she used to be  an English and Qur'an teacher, she began teaching again—inside the tent, under the open sky. With your support, Qur'an lessons resumed for displaced children, filling hearts with light amidst the shadows of war.",
+      type: "image",
+      text: "Despite her losses, Alaa remained a beacon of strength. Once an English and Qur'an teacher, she began teaching again—inside a tent, under open skies. With your support, Qur'an lessons resumed for displaced children, bringing hope where there was none.",
     },
     {
+      title: "Enduring Displacement",
       media: "/martyrs/5.mp4",
-      text: "Forced from Khan Yunis to Deir al-Balah and back again, Alaa endured relentless displacement. Her young daughter fell critically ill, and medicine was impossible to find.And the lil angle became martyred.Despite all these intense trials, Alaa kept going, serving and teaching wherever she could set up shelter.",
+      type: "video",
+      text: "Forced from Khan Yunis to Deir al-Balah and back again, Alaa endured relentless displacement. Her young daughter became critically ill, but medicine was impossible to find. The little angel became martyred. Despite these intense trials, Alaa kept serving and teaching wherever she could set up shelter.",
     },
     {
-      media: "/martyrs/1.jpg",
-      text: `As the bombardment on Khan Yunis intensified, Alaa sent her last message: “I will pray for all of You, Dr Muhammad.You people helped us when none other did" Since then, there has been no contact.Later on we got to know that she embraced martyrdom too. Her tent, her voice, and her presence have gone silent—but her story echoes on.
-`,
+      title: "Her Final Message",
+      media: "/martyrs/Alaa1.jpg",
+      type: "image",
+      text: `As the bombardment on Khan Yunis intensified, Alaa sent her last message: "I will pray for all of you, Dr Muhammad. You people helped us when none other did." Since then, there has been no contact. Later, we learned she had embraced martyrdom. Her story lives on, even if her voice has gone silent.`,
     },
   ];
+
   return (
-    <div>
-      <div className="flex flex-col gap-16 flex-1">
-        {/* First */}
-        <div className="flex flex-col md:flex-row-reverse items-center bg-white shadow-2xl rounded-3xl overflow-hidden">
-          {/* Image */}
-          <div className="w-full md:w-1/3">
-            <Image
-              src="/martyrs/1.jpg"
-              alt="Alaa 1"
-              layout="responsive"
-              width={400}
-              height={400}
-              className="object-fit max-h-[400px] w-full"
-            />
-          </div>
+    <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="flex flex-col gap-20">
+        {components.map((item, idx) => (
+          <motion.div
+            key={idx}
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className={`flex flex-col ${
+              idx % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
+            } items-center bg-white shadow-2xl rounded-3xl overflow-hidden hover:shadow-3xl transition-all duration-300`}
+          >
+            {/* Media Section */}
+            <div className="w-full lg:w-1/2 h-[350px] relative">
+              {item.type === "image" ? (
+                <Image
+                  src={item.media}
+                  alt={item.title}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-none"
+                />
+              ) : (
+                <video
+                  src={item.media}
+                  controls
+                  className="w-full h-full object-cover"
+                />
+              )}
+            </div>
 
-          {/* Description */}
-          <div className="p-6 md:p-8 md:w-2/3 text-center md:text-left">
-            <p className="text-gray-700 leading-relaxed mb-4 text-sm lg:text-base">
-              Months after the world saw a Palestinian Man martyred in sajdah, a
-              message reached us. His widow, Alaa, living in extreme poverty in
-              Khan Yunis, had no food, no home, and three children to feed. Our
-              local volunteers verified her identity and story—she was indeed
-              the wife of the hero the world had mourned.
-            </p>
-          </div>
-        </div>
-
-        {/* Second */}
-        <div className="flex flex-col md:flex-row items-center bg-white shadow-2xl rounded-3xl overflow-hidden">
-          {/* Image */}
-          <div className="w-full md:w-1/3">
-            <Image
-              src="/martyrs/2.jpg"
-              alt="Alaa 2"
-              layout="responsive"
-              width={400}
-              height={400}
-              className="object-fit max-h-[400px] w-full"
-            />
-          </div>
-
-          {/* Description */}
-          <div className="p-6 md:p-8 md:w-2/3 text-center md:text-left">
-            <p className="text-gray-700 leading-relaxed mb-4 text-sm lg:text-base">
-              One day, while Alaa, her daughter, and her mother-in-law went to
-              the market, an airstrike hit their shelter — a UN school where
-              they were taking refuge. Her two little sons, left behind waiting
-              for food, were martyred in that moment. Her voice cracked with
-              grief as she shared this pic with us saying: “I didn&apos;t weep that
-              my children were martyred — I wept because they died hungry.”
-            </p>
-          </div>
-        </div>
-
-        {/* Third */}
-        <div className="flex flex-col md:flex-row-reverse items-center bg-white shadow-2xl rounded-3xl overflow-hidden">
-          {/* Video */}
-          <div className="w-full md:w-1/3">
-            <video
-              src="/martyrs/3.mp4"
-              controls
-              className="object-cover max-h-[400px] w-full"
-              width={400}
-              height={400}
-            />
-          </div>
-
-          {/* Description */}
-          <div className="p-6 md:p-8 md:w-2/3 text-center md:text-left">
-            <p className="text-gray-700 leading-relaxed mb-4 text-sm lg:text-base">
-              Our other volunteers, Yasmeen and Ahmed, rushed to support Alaa. A
-              tent was set up, and with donations from our supporters, she was
-              helped to start a small market stall. Yet, Alaa&apos;s heart wouldn&apos;t
-              let a hungry child go empty-handed—often giving food away for free
-              until the supplies were gone. Even She used to make pizzas for the
-              displaced kids there.
-            </p>
-          </div>
-        </div>
-
-        {/* Fourth */}
-        <div className="flex flex-col md:flex-row items-center bg-white shadow-2xl rounded-3xl overflow-hidden">
-          {/* Image */}
-          <div className="w-full md:w-1/3">
-            <Image
-              src="/martyrs/4.jpg"
-              alt="Alaa 4"
-              layout="responsive"
-              width={400}
-              height={400}
-              className="object-fit max-h-[400px] w-full"
-            />
-          </div>
-
-          {/* Description */}
-          <div className="p-6 md:p-8 md:w-2/3 text-center md:text-left">
-            <p className="text-gray-700 leading-relaxed mb-4 text-sm lg:text-base">
-              Despite her losses, Alaa remained a beacon of strength. As she
-              used to be an English and Qur&apos;an teacher, she began teaching
-              again—inside the tent, under the open sky. With your support,
-              Qur&apos;an lessons resumed for displaced children, filling hearts with
-              light amidst the shadows of war.
-            </p>
-          </div>
-        </div>
-
-        {/* Fifth */}
-        <div className="flex flex-col md:flex-row-reverse items-center bg-white shadow-2xl rounded-3xl overflow-hidden">
-          {/* Video */}
-          <div className="w-full md:w-1/3">
-            <video
-              src="/martyrs/5.mp4"
-              controls
-              className="object-cover max-h-[400px] w-full"
-              width={400}
-              height={400}
-            />
-          </div>
-
-          {/* Description */}
-          <div className="p-6 md:p-8 md:w-2/3 text-center md:text-left">
-            <p className="text-gray-700 leading-relaxed mb-4 text-sm lg:text-base">
-              Forced from Khan Yunis to Deir al-Balah and back again, Alaa
-              endured relentless displacement. Her young daughter fell
-              critically ill, and medicine was impossible to find.And the lil
-              angle became martyred.Despite all these intense trials, Alaa kept
-              going, serving and teaching wherever she could set up shelter.
-            </p>
-          </div>
-        </div>
-
-        {/* Sixth */}
-        <div className="flex flex-col md:flex-row items-center bg-white shadow-2xl rounded-3xl overflow-hidden">
-          {/* Image */}
-          <div className="w-full md:w-1/3">
-            <Image
-              src="/martyrs/Alaa1.jpg"
-              alt="Alaa 6"
-              layout="responsive"
-              width={400}
-              height={400}
-              className="object-fit max-h-[400px] w-full"
-            />
-          </div>
-
-          {/* Description */}
-          <div className="p-6 md:p-8 md:w-2/3 text-center md:text-left">
-            <p className="text-gray-700 leading-relaxed mb-4 text-sm lg:text-base">
-              As the bombardment on Khan Yunis intensified, Alaa sent her last
-              message: 	&quot;I will pray for all of you, Dr Muhammad. You people
-              helped us when none other did&quot;. Since then, there has been no
-              contact. Later on we got to know that she embraced martyrdom too.
-              Her tent, her voice, and her presence have gone silent — but her
-              story echoes on.
-            </p>
-          </div>
-        </div>
+            {/* Text Section */}
+            <div className="w-full lg:w-1/2 p-8 lg:p-10 bg-gray-50 flex flex-col justify-between h-[350px]">
+              <div>
+                <h3 className="text-xl lg:text-2xl font-extrabold text-green-700 mb-4">
+                  {item.title}
+                </h3>
+                <p className="text-gray-700 text-base lg:text-lg leading-relaxed font-medium max-h-[180px] overflow-y-auto pr-2">
+                  {item.text}
+                </p>
+              </div>
+              <div className="mt-6 text-sm text-gray-500 italic text-right">
+                — From the story of Alaa
+              </div>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </div>
   );
